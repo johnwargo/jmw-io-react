@@ -5,7 +5,7 @@ import './pages.css';
 class IotPage extends React.Component {
 
   componentDidMount() {
-    document.title = 'TITLE: John Wargo Code';
+    document.title = 'IoT: John Wargo Code';
   }
 
   render() {

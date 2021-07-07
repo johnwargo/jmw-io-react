@@ -1,9 +1,8 @@
 import React from 'react';
+import ReactGA from 'react-ga';
 import { Router, Switch, Route } from 'react-router-dom';
-// import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { NavDropdown, Navbar, Nav } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
-import ReactGA from 'react-ga';
 import { createBrowserHistory } from 'history';
 
 // The app's page components
@@ -13,7 +12,7 @@ import HomePage from './pages/home';
 import IotPage from './pages/iot';
 import MiscellaneousPage from './pages/misc';
 import MobilePage from './pages/mobile';
-import WebPage from './pages/mobile';
+import WebPage from './pages/web';
 import WindowsPage from './pages/windows';
 
 import './App.css';

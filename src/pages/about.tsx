@@ -7,7 +7,7 @@ class AboutPage extends React.Component {
 
   componentDidMount() {
     // console.log('About: componentDidMount()');
-    document.title = 'About: John Wargo Books';
+    document.title = 'About: John Wargo Code';
   }
 
   render() {

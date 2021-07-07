@@ -7,7 +7,7 @@ class HomePage extends React.Component {
 
   componentDidMount() {
     // console.log('Home: componentDidMount()');
-    document.title = 'John Wargo Books';
+    document.title = 'John Wargo Code';
   }
 
   render() {
