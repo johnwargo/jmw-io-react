@@ -10,8 +10,11 @@ import { createBrowserHistory } from 'history';
 import AboutPage from './pages/about';
 import BooksPage from './pages/books';
 import HomePage from './pages/home';
+import IotPage from './pages/iot';
+import MiscellaneousPage from './pages/misc';
 import MobilePage from './pages/mobile';
 import WebPage from './pages/mobile';
+import WindowsPage from './pages/windows';
 
 import './App.css';
 // Build information package
@@ -98,7 +101,7 @@ class App extends React.Component {
               <LinkContainer to="/windows">
                 <Nav.Link>Windows</Nav.Link>
               </LinkContainer>
-              <LinkContainer to="/misc">
+              <LinkContainer to="/miscellaneous">
                 <Nav.Link>Miscellaneous</Nav.Link>
               </LinkContainer>
               <NavDropdown title="About" id="basic-nav-dropdown">
@@ -121,11 +124,20 @@ class App extends React.Component {
           <Route path="/books">
             <BooksPage />
           </Route>
+          <Route path="/iot">
+            <IotPage />
+          </Route>
+          <Route path="/miscellaneous">
+            <MiscellaneousPage />
+          </Route>
           <Route path="/mobile">
             <MobilePage />
           </Route>
           <Route path="/web">
             <WebPage />
+          </Route>
+          <Route path="/windows">
+            <WindowsPage />
           </Route>
           <Route path="/">
             <HomePage />

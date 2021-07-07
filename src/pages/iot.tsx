@@ -2,16 +2,16 @@ import React from 'react';
 
 import './pages.css';
 
-class WebPage extends React.Component {
+class IotPage extends React.Component {
 
   componentDidMount() {
-    document.title = 'Web: John Wargo Code';
+    document.title = 'TITLE: John Wargo Code';
   }
 
   render() {
     return (
       <div className='container' >
-        <h2 style={{ paddingTop: "10px" }}>Web Development</h2>
+        <h2 style={{ paddingTop: "10px" }}>Internet of Things (IoT)</h2>
         <p>Bacon ipsum dolor amet short loin picanha shank pork loin capicola, boudin ham. Shankle ground round sausage t-bone pork chop shoulder ball tip jerky flank chuck. Capicola turducken buffalo andouille, spare ribs frankfurter rump brisket ball tip. Sirloin chicken prosciutto ham porchetta. Chislic beef beef ribs pork. Ball tip hamburger leberkas, shank shoulder picanha porchetta bresaola corned beef beef ground round capicola spare ribs ham hock cow. Landjaeger hamburger short loin meatball.</p>
         <p>Drumstick jerky cupim landjaeger capicola short loin tongue, prosciutto ground round pastrami hamburger picanha tenderloin pork jowl. Pork belly swine ham jowl shoulder boudin. Salami bresaola filet mignon, shank drumstick pancetta swine chicken flank andouille. Pig frankfurter hamburger beef meatloaf, meatball buffalo landjaeger beef ribs chislic chicken ball tip pork belly cow.</p>
         <p>Tri-tip ham hock cow venison. Turducken tri-tip kevin ground round tongue, sausage biltong prosciutto doner short loin beef chuck hamburger frankfurter. Kielbasa pancetta ham corned beef ball tip. Jowl t-bone alcatra cow spare ribs jerky pork.</p>
@@ -22,4 +22,4 @@ class WebPage extends React.Component {
   }
 }
 
-export default WebPage;
+export default IotPage;
