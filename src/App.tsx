@@ -1,3 +1,6 @@
+// TODO: Add Node page
+// TODO: Add Flutter page
+
 import React from 'react';
 import ReactGA from 'react-ga';
 import { Router, Switch, Route } from 'react-router-dom';
@@ -7,6 +10,7 @@ import { createBrowserHistory } from 'history';
 
 // The app's page components
 import AboutPage from './pages/about';
+import AllPage from './pages/all';
 import BooksPage from './pages/books';
 import HomePage from './pages/home';
 import IotPage from './pages/iot';
@@ -88,21 +92,27 @@ class App extends React.Component {
               <LinkContainer to="/books">
                 <Nav.Link>Books</Nav.Link>
               </LinkContainer>
-              <LinkContainer to="/mobile">
-                <Nav.Link>Mobile</Nav.Link>
-              </LinkContainer>
-              <LinkContainer to="/web">
-                <Nav.Link>Web</Nav.Link>
+              <LinkContainer to="/flutter">
+                <Nav.Link>Flutter</Nav.Link>
               </LinkContainer>
               <LinkContainer to="/iot">
                 <Nav.Link>IoT</Nav.Link>
               </LinkContainer>
-              <LinkContainer to="/windows">
-                <Nav.Link>Windows</Nav.Link>
-              </LinkContainer>
               <LinkContainer to="/misc">
                 <Nav.Link>Misc.</Nav.Link>
               </LinkContainer>
+              <LinkContainer to="/mobile">
+                <Nav.Link>Mobile</Nav.Link>
+              </LinkContainer>
+              <LinkContainer to="/node">
+                <Nav.Link>NodeJS</Nav.Link>
+              </LinkContainer>
+              <LinkContainer to="/web">
+                <Nav.Link>Web</Nav.Link>
+              </LinkContainer>              
+              <LinkContainer to="/windows">
+                <Nav.Link>Windows</Nav.Link>
+              </LinkContainer>              
               <NavDropdown title="About" id="basic-nav-dropdown">
                 <LinkedMenuItem linkTarget="/about" linkText="Me" />
                 <NavDropdown.Item onClick={() => this.loadExternalUrl("https://johnwargo.com")}>
@@ -119,6 +129,9 @@ class App extends React.Component {
         <Switch>
           <Route path="/about">
             <AboutPage />
+          </Route>
+          <Route path="/all">
+            <AllPage />
           </Route>
           <Route path="/books">
             <BooksPage />
