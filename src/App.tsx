@@ -101,8 +101,8 @@ class App extends React.Component {
               <LinkContainer to="/windows">
                 <Nav.Link>Windows</Nav.Link>
               </LinkContainer>
-              <LinkContainer to="/miscellaneous">
-                <Nav.Link>Miscellaneous</Nav.Link>
+              <LinkContainer to="/misc">
+                <Nav.Link>Misc.</Nav.Link>
               </LinkContainer>
               <NavDropdown title="About" id="basic-nav-dropdown">
                 <LinkedMenuItem linkTarget="/about" linkText="Me" />
@@ -127,7 +127,7 @@ class App extends React.Component {
           <Route path="/iot">
             <IotPage />
           </Route>
-          <Route path="/miscellaneous">
+          <Route path="/misc">
             <MiscellaneousPage />
           </Route>
           <Route path="/mobile">
