@@ -2,14 +2,29 @@ import React from 'react';
 import { Router, Switch, Route } from 'react-router-dom';
 import { NavDropdown, Navbar, Nav } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
+import ReactGA from 'react-ga';
 import { createBrowserHistory } from 'history';
 
 import './App.css';
 // Build information package
 import buildInfo from './buildInfo';
 
+type LinkProps = {
+  linkText: string,
+  linkTarget: string
+}
+
 const buildDate = new Date(buildInfo.buildDate);
 const history = createBrowserHistory();
+
+history.listen((location: any) => {
+  // console.log('History update ');
+  // console.dir(location);
+  // console.log(document.title);
+  const page = location.pathname;
+  ReactGA.set({ page: page });
+  ReactGA.pageview(page, [], document.title);  
+});
 
 class App extends React.Component {
 
