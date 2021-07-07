@@ -11,3 +11,36 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.navbar-brand {
+    padding-top: .2rem;
+    margin-left: 0.8rem;
+}
+.navbar-brand a {
+  text-decoration:none;
+    color: black;
+}
+.navbar-toggler {
+  margin-right: 1rem;
+  padding: .25rem .35rem;
+}
+.navbar-nav {
+  float: right;
+  width: 250px;
+  margin-right: 0.5rem;
+}
+.lead {
+  padding-bottom: 2rem;
+  border-bottom: 1pt solid #ccc;
+  margin-bottom: 2rem;
+}
+.page-header h1 {
+  margin-top: 1rem;
+}
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+      margin-top: -0.5rem;
+  }
+  .page-header {
+    margin-top: 1rem;
+  }
+}

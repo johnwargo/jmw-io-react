@@ -1,9 +1,17 @@
 import React from 'react';
 import { Router, Switch, Route } from 'react-router-dom';
+// import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { NavDropdown, Navbar, Nav } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import ReactGA from 'react-ga';
 import { createBrowserHistory } from 'history';
+
+// The app's page components
+import AboutPage from './pages/about';
+import BooksPage from './pages/books';
+import HomePage from './pages/home';
+import MobilePage from './pages/mobile';
+import WebPage from './pages/mobile';
 
 import './App.css';
 // Build information package
@@ -23,7 +31,7 @@ history.listen((location: any) => {
   // console.log(document.title);
   const page = location.pathname;
   ReactGA.set({ page: page });
-  ReactGA.pageview(page, [], document.title);  
+  ReactGA.pageview(page, [], document.title);
 });
 
 class App extends React.Component {
@@ -75,29 +83,31 @@ class App extends React.Component {
               <LinkContainer to="/home">
                 <Nav.Link>Home</Nav.Link>
               </LinkContainer>
-              <NavDropdown title="Technical Books" id="basic-nav-dropdown">
-                <LinkedMenuItem linkTarget="/books/web" linkText="Progressive Web Apps" />
-                <LinkedMenuItem linkTarget="/books/cordova" linkText="Apache Cordova Development" />
-                <LinkedMenuItem linkTarget="/books/blackberry" linkText="BlackBerry Development" />
-                <LinkedMenuItem linkTarget="/books/domino" linkText="IBM Lotus Notes Development" />
-              </NavDropdown>
-              <NavDropdown title="Other Publications" id="basic-nav-dropdown">
-                <LinkedMenuItem linkTarget="/books/soccer" linkText="Soccer Officials" />
-                <NavDropdown.Divider />
-                <NavDropdown.Item disabled>Tech Reviews</NavDropdown.Item>
-                <LinkedMenuItem linkTarget="/books/python" linkText="Python Development" />
-                <LinkedMenuItem linkTarget="/books/smartphones" linkText="Smartphones" />
-              </NavDropdown>
-              <LinkContainer to="/articles">
-                <Nav.Link>Articles</Nav.Link>
+              <LinkContainer to="/books">
+                <Nav.Link>Books</Nav.Link>
+              </LinkContainer>
+              <LinkContainer to="/mobile">
+                <Nav.Link>Mobile</Nav.Link>
+              </LinkContainer>
+              <LinkContainer to="/web">
+                <Nav.Link>Web</Nav.Link>
+              </LinkContainer>
+              <LinkContainer to="/iot">
+                <Nav.Link>IoT</Nav.Link>
+              </LinkContainer>
+              <LinkContainer to="/windows">
+                <Nav.Link>Windows</Nav.Link>
+              </LinkContainer>
+              <LinkContainer to="/misc">
+                <Nav.Link>Miscellaneous</Nav.Link>
               </LinkContainer>
               <NavDropdown title="About" id="basic-nav-dropdown">
                 <LinkedMenuItem linkTarget="/about" linkText="Me" />
                 <NavDropdown.Item onClick={() => this.loadExternalUrl("https://johnwargo.com")}>
                   Blog (external)
                 </NavDropdown.Item>
-                <NavDropdown.Item onClick={() => this.loadExternalUrl("https://github.com/johnwargo")}>
-                  Code (external)
+                <NavDropdown.Item onClick={() => this.loadExternalUrl("https://johnwargobooks.com")}>
+                  Books (external)
                 </NavDropdown.Item>
               </NavDropdown>
             </Nav>
@@ -105,38 +115,22 @@ class App extends React.Component {
         </Navbar>
 
         <Switch>
-          {/* <Route path="/about">
-            <About />
+          <Route path="/about">
+            <AboutPage />
           </Route>
-          <Route path="/articles">
-            <Articles />
+          <Route path="/books">
+            <BooksPage />
           </Route>
-          <Route path="/books/blackberry">
-            <BlackBerry />
+          <Route path="/mobile">
+            <MobilePage />
           </Route>
-          <Route path="/books/cordova">
-            <Cordova />
-          </Route>
-          <Route path="/books/domino">
-            <Domino />
-          </Route>
-          <Route path="/books/python">
-            <Python />
-          </Route>
-          <Route path="/books/smartphones">
-            <Smartphones />
-          </Route>
-          <Route path="/books/soccer">
-            <Soccer />
-          </Route>
-          <Route path="/books/web">
-            <Web />
+          <Route path="/web">
+            <WebPage />
           </Route>
           <Route path="/">
-            <Home />
-          </Route> */}
+            <HomePage />
+          </Route>
         </Switch>
-
       </Router>
     );
   }
