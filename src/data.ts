@@ -3,8 +3,12 @@
  * in here and I can render it all with just one page. 
 */
 
+import { Page } from './interfaces/page';
+import { Repository } from './interfaces/repo';
+
+
 // I may not need this for anything, but I'm going to leave it here for now.
-export const Categories = ["Book", "Flutter", "Ionic", "IoT", "Misc", "Mobile", "Node", "Web", "Windows"];
+// export const Categories = ["Book", "Flutter", "Ionic", "IoT", "Misc", "Mobile", "Node", "Web", "Windows"];
 
 // Defines the different pages in the site and the content displayed on each page.
 // ,{
@@ -13,7 +17,7 @@ export const Categories = ["Book", "Flutter", "Ionic", "IoT", "Misc", "Mobile", 
 //     description: '',
 //     category: ''
 // }
-export const Pages = [
+export const Pages: Page[] = [
     {
         name: 'Books',
         titlePage: 'Book Code',
@@ -73,7 +77,7 @@ export const Pages = [
 
 // Data for all of my public repositories.
 // look for an Empty record at the end of the array
-export const Repositories = [{
+export const Repositories: [] = [{
     Book: [{
         name: 'learning-pwa-code',
         url: 'https://github.com/johnwargo/learning-pwa-code',
