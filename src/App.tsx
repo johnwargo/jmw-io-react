@@ -12,10 +12,12 @@ import { createBrowserHistory } from 'history';
 import AboutPage from './pages/about';
 import AllPage from './pages/all';
 import BooksPage from './pages/books';
+import FlutterPage from './pages/flutter';
 import HomePage from './pages/home';
 import IotPage from './pages/iot';
 import MiscellaneousPage from './pages/misc';
 import MobilePage from './pages/mobile';
+import NodePage from './pages/node';
 import WebPage from './pages/web';
 import WindowsPage from './pages/windows';
 
@@ -136,6 +138,9 @@ class App extends React.Component {
           <Route path="/books">
             <BooksPage />
           </Route>
+          <Route path="/flutter">
+            <FlutterPage />
+          </Route>
           <Route path="/iot">
             <IotPage />
           </Route>
@@ -144,6 +149,9 @@ class App extends React.Component {
           </Route>
           <Route path="/mobile">
             <MobilePage />
+          </Route>
+          <Route path="/node">
+            <NodePage />
           </Route>
           <Route path="/web">
             <WebPage />
