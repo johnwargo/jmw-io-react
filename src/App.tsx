@@ -18,6 +18,7 @@ import IotPage from './pages/iot';
 import MiscellaneousPage from './pages/misc';
 import MobilePage from './pages/mobile';
 import NodePage from './pages/node';
+import ReposPage from './pages/repos';
 import WebPage from './pages/web';
 import WindowsPage from './pages/windows';
 
@@ -94,7 +95,10 @@ class App extends React.Component {
               <LinkContainer to="/books">
                 <Nav.Link>Books</Nav.Link>
               </LinkContainer>
-              <LinkContainer to="/flutter">
+              <LinkContainer to="/repos">
+                <Nav.Link>Repositories</Nav.Link>
+              </LinkContainer>
+              {/* <LinkContainer to="/flutter">
                 <Nav.Link>Flutter</Nav.Link>
               </LinkContainer>
               <LinkContainer to="/iot">
@@ -114,7 +118,7 @@ class App extends React.Component {
               </LinkContainer>              
               <LinkContainer to="/windows">
                 <Nav.Link>Windows</Nav.Link>
-              </LinkContainer>              
+              </LinkContainer> */}
               <NavDropdown title="About" id="basic-nav-dropdown">
                 <LinkedMenuItem linkTarget="/about" linkText="Me" />
                 <NavDropdown.Item onClick={() => this.loadExternalUrl("https://johnwargo.com")}>
@@ -138,7 +142,7 @@ class App extends React.Component {
           <Route path="/books">
             <BooksPage />
           </Route>
-          <Route path="/flutter">
+          {/* <Route path="/flutter">
             <FlutterPage />
           </Route>
           <Route path="/iot">
@@ -152,13 +156,16 @@ class App extends React.Component {
           </Route>
           <Route path="/node">
             <NodePage />
+          </Route> */}
+          <Route path="/repos">
+            <ReposPage />
           </Route>
-          <Route path="/web">
+          {/* <Route path="/web">
             <WebPage />
           </Route>
           <Route path="/windows">
             <WindowsPage />
-          </Route>
+          </Route> */}
           <Route path="/">
             <HomePage />
           </Route>
