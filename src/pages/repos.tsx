@@ -2,7 +2,7 @@ import React from 'react';
 import { Form } from "react-bootstrap";
 
 import './pages.css';
-import Page from "../interfaces/page";
+import { Page } from "../interfaces/page";
 import { Repository, RepositoryList } from '../interfaces/repo';
 import { Pages, Repositories } from '../data';
 
@@ -21,12 +21,17 @@ class ReposPage extends React.Component<RepoProps, RepoState> {
     super(props);
 
     // Default the page to books repo list
+    // So get the books page details
     var page: any = Pages.find(x => x.name === 'Books');
-
+    // Then get the books repository list
+    var repoObject: any = Repositories.find(x => x.name === 'Books');
+    // finally update the page state with the current values
     this.state = {
       page: page,
-      repoList: []
+      repoList: repoObject.repos
     };
+
+    // repoList: repoObject.repos
   }
 
   componentDidMount() {
@@ -48,16 +53,17 @@ class ReposPage extends React.Component<RepoProps, RepoState> {
     console.log(`Selected topic: ${selectedTopic}`);
     // Find the page object that matches the selected topic
     var page: any = Pages.find(x => x.name === selectedTopic);
-    console.dir(page);
+    var repoObject: any = Repositories.find(x => x.name === selectedTopic);
+
     // Update the current page title based on the selection
     document.title = `${page.titleTab}: John Wargo Code`;
+    console.table(repoObject);
+
     // Set our selected page to state
-    this.setState({ page });
-    // console.dir(Repositories.find('Books');
-    // var repos: Repository[] = Repositories[selectedTopic];
-    // console.dir(repos);
-
-
+    this.setState({
+      page: page,
+      repoList: repoObject.repos
+    });
   }
 
   render() {

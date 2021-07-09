@@ -66,7 +66,7 @@ export const Pages: Page[] = [
 // look for an Empty record at the end of the array
 export const Repositories: RepositoryList[] = [
     {
-        name: "Book",
+        name: "Books",
         repos: [
             {
                 name: 'learning-pwa-code',
@@ -94,8 +94,20 @@ export const Repositories: RepositoryList[] = [
                 description: 'PhoneGap Essentials Book Source Code'
             }
         ]
-    },
-    {
+    }, {
+        name: "Apache Cordova",
+        repos: [
+            {
+                name: 'johnwargo-cordova-plugin-mol',
+                url: 'https://github.com/johnwargo/johnwargo-cordova-plugin-mol',
+                description: 'Cordova JavaScript-only Plugin'
+            }, {
+                name: 'johnwargo-cordova-plugin-carrier',
+                url: 'https://github.com/johnwargo/johnwargo-cordova-plugin-carrier',
+                description: 'Cordova plugin to rettrieve carrier ID from the phone'
+            }
+        ]
+    }, {
         name: "Flutter",
         repos: [
             {
@@ -128,8 +140,7 @@ export const Repositories: RepositoryList[] = [
                 description: 'A simple app demonstrating how to use the Flutter Logging library'
             }
         ]
-    },
-    {
+    }, {
         name: "Ionic",
         repos: [
             {
@@ -154,8 +165,7 @@ export const Repositories: RepositoryList[] = [
                 description: ''
             }
         ]
-    },
-    {
+    }, {
         name: "IoT",
         repos: [
             {
@@ -224,9 +234,8 @@ export const Repositories: RepositoryList[] = [
                 description: 'Pi Remind HD project enhanced to work with the Remote Notify project'
             }
         ]
-    },
-    {
-        name: "Misc",
+    }, {
+        name: "Miscellaneous",
         repos: [
             {
                 name: 'phonegapday-2017',
@@ -242,22 +251,7 @@ export const Repositories: RepositoryList[] = [
                 description: 'Source code for my Hackspace Magazine articles'
             }
         ]
-    },
-    {
-        name: "Mobile",
-        repos: [
-            {
-                name: 'johnwargo-cordova-plugin-mol',
-                url: 'https://github.com/johnwargo/johnwargo-cordova-plugin-mol',
-                description: 'Cordova JavaScript-only Plugin'
-            }, {
-                name: 'johnwargo-cordova-plugin-carrier',
-                url: 'https://github.com/johnwargo/johnwargo-cordova-plugin-carrier',
-                description: 'Cordova plugin to rettrieve carrier ID from the phone'
-            }
-        ]
-    },
-    {
+    }, {
         name: "Node",
         repos: [
             {
@@ -314,8 +308,7 @@ export const Repositories: RepositoryList[] = [
                 description: 'A Node module for updating an .ics file and launching it'
             }
         ]
-    },
-    {
+    }, {
         name: "Web",
         repos: [
             {
@@ -336,8 +329,7 @@ export const Repositories: RepositoryList[] = [
                 description: 'Bootstrap Complete NavBar example application'
             }
         ]
-    },
-    {
+    }, {
         name: "Windows",
         repos: [
             {
