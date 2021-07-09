@@ -28,22 +28,21 @@ class ReposPage extends React.Component<RepoProps, RepoState> {
     // finally update the page state with the current values
     this.state = {
       page: page,
-      repoList: repoObject.repos
+      repoList: repoObject.repos.sort(this.compare)
     };
-
-    // repoList: repoObject.repos
   }
 
-  componentDidMount() {
-    console.log('ReposPage: componentDidMount()');
-  }
+  // componentDidMount() {
+  //   console.log('ReposPage: componentDidMount()');
+  // }
 
+  // TODO: This isn't working
   compare(a: Repository, b: Repository) {
     let comparison = 0;
     if (a.name < b.name) {
-      comparison = 1;
-    } else if (a.name > b.name) {
       comparison = -1;
+    } else if (a.name > b.name) {
+      comparison = 1;
     }
     return comparison;
   }
@@ -54,15 +53,13 @@ class ReposPage extends React.Component<RepoProps, RepoState> {
     // Find the page object that matches the selected topic
     var page: any = Pages.find(x => x.name === selectedTopic);
     var repoObject: any = Repositories.find(x => x.name === selectedTopic);
-
+    console.table(repoObject.repos);
     // Update the current page title based on the selection
     document.title = `${page.titleTab}: John Wargo Code`;
-    console.table(repoObject);
-
     // Set our selected page to state
     this.setState({
       page: page,
-      repoList: repoObject.repos
+      repoList: repoObject.repos.sort(this.compare)
     });
   }
 

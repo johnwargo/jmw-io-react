@@ -3,6 +3,8 @@
  * in here and I can render it all with just one page. 
 */
 
+// TODO: merge the two objects (page and repoList) into a single array
+
 import { Page } from './interfaces/page';
 import { RepositoryList } from './interfaces/repo';
 
