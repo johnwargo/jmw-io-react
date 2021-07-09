@@ -77,7 +77,7 @@ export const Pages: Page[] = [
 
 // Data for all of my public repositories.
 // look for an Empty record at the end of the array
-export const Repositories: [] = [{
+export const Repositories: any[] = [{
     Book: [{
         name: 'learning-pwa-code',
         url: 'https://github.com/johnwargo/learning-pwa-code',

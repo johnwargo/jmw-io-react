@@ -15,20 +15,16 @@ type RepoState = {
   repoList: Repository[];
 }
 
-// name: string;       // The name of the page, used in the Repo page combobox
-// titlePage: string;  // the H1 content that starts the page
-// titleTab: string;   // the browser tab prefix for this item  
-// body: string;       // page content for the selected item
-// category: string;   // data category
-
-
-// class ReposPage extends React.Component<RepoProps, RepoState> {
 class ReposPage extends React.Component<RepoProps, RepoState> {
 
   constructor(props: RepoProps) {
     super(props);
+
+    // Default the page to books repo list
+    var page: any = Pages.find(x => x.name === 'Books');
+
     this.state = {
-      page: { name: '', titlePage: '', titleTab: '', body: '', category: '' },
+      page: page,
       repoList: []
     };
   }
@@ -47,26 +43,16 @@ class ReposPage extends React.Component<RepoProps, RepoState> {
     return comparison;
   }
 
-  getPage(topic: string): Page {
-    let tmpArray: Page[] = Pages.find(x => x.name === topic);
-    if (tmpArray.length > 0) {
-      return tmpArray[0];
-    } else {
-      return null;
-    }
-  }
-
   onChangeTopicSelection(event: any) {
-    console.log(`Selected topic: ${event.target.value}`);
     var selectedTopic = event.target.value;
-    console.dir(Pages);
-
-    // jsObjects.find(x => x.b === 6)
-    var page: Page =
-      document.title = `${page.titleTab}: John Wargo Code`;
+    console.log(`Selected topic: ${selectedTopic}`);
+    // Find the page object that matches the selected topic
+    var page: any = Pages.find(x => x.name === selectedTopic);
     console.dir(page);
-
-
+    // Update the current page title based on the selection
+    document.title = `${page.titleTab}: John Wargo Code`;
+    // Set our selected page to state
+    this.setState({ page });
     // console.dir(Repositories.find('Books');
     // var repos: Repository[] = Repositories[selectedTopic];
     // console.dir(repos);
@@ -89,6 +75,9 @@ class ReposPage extends React.Component<RepoProps, RepoState> {
             <option key={idx}>{page.name}</option>
           ))}
         </Form.Control>
+        <h2>{this.state.page.titlePage}</h2>
+        <p>{this.state.page.body}</p>
+        {/* <RepoList repoList={this.state.repoList.filter({{ this.state.page.category }})}/> */}
       </div>
     );
   }
