@@ -2,8 +2,8 @@ import React from 'react';
 import { Form } from "react-bootstrap";
 
 import './pages.css';
-import { Page } from "../interfaces/page";
-import { Repository } from '../interfaces/repo';
+import Page from "../interfaces/page";
+import { Repository, RepositoryList } from '../interfaces/repo';
 import { Pages, Repositories } from '../data';
 
 type RepoProps = {
