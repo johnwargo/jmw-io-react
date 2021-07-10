@@ -127,9 +127,12 @@ class App extends React.Component {
           <Route path="/about">
             <AboutPage />
           </Route>
-          <Route path="/books">
+          {/* <Route path="/books">
             <BooksPage />
-          </Route>
+          </Route> */}
+          <Route path="/books">
+          <TopicPage topic='Books' />
+          </Route>        
           <Route path="/cordova">
             <TopicPage topic='Apache Cordova' />
           </Route>
