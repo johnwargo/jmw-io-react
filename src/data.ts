@@ -282,7 +282,7 @@ export const Pages: Page[] = [
         name: 'Web',
         titlePage: 'Web Development',
         titleTab: 'Web',
-        body: "",
+        body: "Kielbasa alcatra drumstick doner. Sirloin cupim pork loin shankle leberkas pig ground round andouille jowl doner brisket bacon pork belly. Drumstick pig landjaeger porchetta t-bone pastrami. Sirloin burgdoggen biltong beef ribs cow ball tip jowl meatball pastrami. Buffalo ribeye beef pig porchetta picanha chislic short ribs prosciutto burgdoggen beef ribs meatloaf pancetta.",
         repositories: [
             {
                 name: 'react-samples-t3',
@@ -306,7 +306,7 @@ export const Pages: Page[] = [
         name: 'Windows',
         titlePage: 'Windows Development',
         titleTab: 'Windows',
-        body: "",
+        body: "Kielbasa alcatra drumstick doner. Sirloin cupim pork loin shankle leberkas pig ground round andouille jowl doner brisket bacon pork belly. Drumstick pig landjaeger porchetta t-bone pastrami. Sirloin burgdoggen biltong beef ribs cow ball tip jowl meatball pastrami. Buffalo ribeye beef pig porchetta picanha chislic short ribs prosciutto burgdoggen beef ribs meatloaf pancetta.",
         repositories: [
             {
                 name: 'Outlook-Kill-Country-Delphi',
