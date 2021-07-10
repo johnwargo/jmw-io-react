@@ -66,7 +66,7 @@ export const Pages: Page[] = [
         name: 'Flutter',
         titlePage: 'Flutter Development',
         titleTab: 'Flutter',
-        body: "I've been doing a lot of Flutter development lately. When I figure out how to do something in Flutter that isn't documented very well anywhere, I usually build a complete example application and publish it for others to learn from. This list of repositories reflects the current results of those efforts",
+        body: "I've been doing a lot of Flutter development lately. When I figure out how to do something in Flutter that isn't documented very well anywhere, I usually build a complete example application and publish it for others to learn from. This list of repositories reflects the current results of those efforts.",
         repositories: [
             {
                 name: 'Flutter Navigation Example Application',
@@ -98,28 +98,28 @@ export const Pages: Page[] = [
         name: 'Ionic',
         titlePage: 'Ionic Development',
         titleTab: 'Ionic',
-        body: "",
+        body: "Aaah, I love working with the Ionic Framework. I learned Ionic many years ago while working as a consultant at Microsoft. Since then, I've created many Ionic apps, including several apps in the Apple and Google app stores. When I figure out how to do something in Ionic that isn't documented very well anywhere, I usually build a complete example application and publish it for others to learn from. This list of repositories reflects the current results of those efforts.",
         repositories: [
             {
-                name: 'weather-app-ionic-4',
+                name: 'Weather Sample Application (Ionic 4)',
                 url: 'https://github.com/johnwargo/weather-app-ionic-4',
-                description: 'A sample weather app built using Ionic 4'
+                description: "The full source code for a simple weather application built using Ionic 4."
             }, {
-                name: 'ionic-slides-example',
+                name: 'Ionic Slides Example Application',
                 url: 'https://github.com/johnwargo/ionic-slides-example',
-                description: 'A sample implementation of ion-slides'
+                description: "For several of my Ionic applications, I wanted to use the Slides metaphor as a quick intro to the application. There were a lot of articles that showed how to 'use' Slides in Ionic, but none of them were complete examples. So, I built one to teach myself, then published the results here"
             }, {
-                name: 'ionic-edit-object-sample',
+                name: 'Ionic Edit Object Example Application',
                 url: 'https://github.com/johnwargo/ionic-edit-object-sample',
-                description: 'An Ionic application demonstrating two ways to edit an object'
+                description: "One of the cool features of Reactive development is the two-way binding it provides. Make an update to an object in your code or in the UI, and it automatically updates the other. A bad side-effect of this is that when you make a change to an app setting in the Settings page, it automatically writes it to the config. Since most settings pages allow the user to cancel their edits (by pressing the Cancel button), I had to figure out a way to do this in Ionic. The solution's evolved a bit over time, but this was my first sample app demonstrating two ways to edit an object in Ionic."
             }, {
-                name: 'ionic-cascading-providers',
+                name: 'Ionic Cascading Providers Example Application',
                 url: 'https://github.com/johnwargo/ionic-cascading-providers',
-                description: ''
+                description: "This is my earliest Ionic sample application. As I learned about Providers in Ionic, I was curious whether I could programmatically 'pick' my provider at runtime and this sample application validates that you can."
             }, {
-                name: 'ionic-pipes-example',
+                name: 'Ionic Pipes Example Application',
                 url: 'https://github.com/johnwargo/ionic-pipes-example',
-                description: ''
+                description: "Pipes are a really cool feature of Angular (Ionic runs on top of Angular by default) and I needed to create some for a project I was working on. I had some issues getting my pipes to work at first, so I wrote this simple sample application to help me figure it out."
             }
         ]
     }, {

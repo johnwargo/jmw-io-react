@@ -7,14 +7,12 @@ import { createBrowserHistory } from 'history';
 
 // The app's page components
 import AboutPage from './pages/about';
-import BooksPage from './pages/books';
 import HomePage from './pages/home';
 import TopicPage from './pages/page';
 // generated content
 import buildInfo from './buildInfo';
 import './App.css';
 
-// TODO: Build out the Books page
 // TODO: Populate all of the page content
 // TODO: Populate all of the repository content
 // TODO: Get google analytics working
@@ -97,6 +95,9 @@ class App extends React.Component {
               <LinkContainer to="/flutter">
                 <Nav.Link>Flutter</Nav.Link>
               </LinkContainer>
+              <LinkContainer to="/ionic">
+                <Nav.Link>Ionic</Nav.Link>
+              </LinkContainer>
               <LinkContainer to="/iot">
                 <Nav.Link>IoT</Nav.Link>
               </LinkContainer>
@@ -140,6 +141,9 @@ class App extends React.Component {
           </Route>
           <Route path="/flutter">
             <TopicPage topic='Flutter' />
+          </Route>
+          <Route path="/ionic">
+            <TopicPage topic='Ionic' />
           </Route>
           <Route path="/iot">
             <TopicPage topic='IoT' />
