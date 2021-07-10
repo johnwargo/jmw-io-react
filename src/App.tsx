@@ -18,6 +18,8 @@ import './App.css';
 // TODO: Populate all of the page content
 // TODO: Populate all of the repository content
 // TODO: Get google analytics working
+// TODO: Publish the app somewhere
+// TODO: point johnwargo.io to this project's code
 
 // Define the props used to render menu items
 type LinkProps = {
