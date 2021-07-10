@@ -28,24 +28,26 @@ class TopicPage extends React.Component<PageProps, PageState> {
     console.log(`TopicPage: componentDidMount(${this.props.topic})`);
     var page: any = Pages.find(x => x.name === this.props.topic);
     if (page) {
-      console.log('TopicPage: found page data');
-      console.dir(page)
-      page.repos = page.repos.sort(this.compare);
-      document.title = `${page.titleTab}: John Wargo Code`;
-      // update the page state with the current values
-      this.setState({ page });
+      this.updatePage(this.props.topic);      
     } else {
       console.error('No page found');
     }
   }
 
-  // getDerivedStateFromProps() {
-  //   console.log('here we go');
-  // }
+  componentDidUpdate(prevProps: PageProps) {
+    console.log(`TopicPage: componentDidUpdate(${this.props.topic})`);
+    if (this.props.topic !== prevProps.topic) {
+      this.updatePage(this.props.topic);
+    } 
+  }
 
-  // shouldComponentUpdate() {
-  //   console.log('TopicPage: shouldComponentUpdate()');
-  // }
+  updatePage(topic: string){
+    var page: any = Pages.find(x => x.name === topic);
+    // TODO: Only sort this once
+    page.repositories = page.repositories.sort(this.compare);
+    document.title = `${page.titleTab}: John Wargo Code`;
+    this.setState({ page });
+  }
 
   compare(a: Repository, b: Repository) {
     let comparison = 0;
