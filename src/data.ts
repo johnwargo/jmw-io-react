@@ -187,7 +187,7 @@ export const Pages: Page[] = [
             }, {
                 name: 'Arduino Glowing Pumpkin (Feather & NeoPixel)',
                 url: 'https://github.com/johnwargo/glowing-pumpkin-feather',
-                description: "This project is very similar to the other Glowing Pumpkin project although this is designed for a huge pumpkin and uses the Adafruit Feather board."
+                description: "This project is very similar to the other Glowing Pumpkin project (below) although this is designed for a huge pumpkin and uses the Adafruit Feather board. I put this pumpkin in my house's front atrium."
             }, {
                 name: 'Pi Remind HD Notify',
                 url: 'https://github.com/johnwargo/pi-remind-hd-notify',
