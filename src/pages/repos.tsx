@@ -1,10 +1,10 @@
 import React from 'react';
 import { Form } from "react-bootstrap";
 
-import './pages.css';
-import { Page } from "../interfaces/page";
-import { Repository, RepositoryList } from '../interfaces/repo';
-import { Pages, Repositories } from '../data';
+import { Page, Repository } from "../interfaces/page";
+import { Pages } from '../data';
+
+import './page.css';
 
 type RepoProps = {
 
@@ -12,7 +12,6 @@ type RepoProps = {
 
 type RepoState = {
   page: Page;
-  repoList: Repository[];
 }
 
 class ReposPage extends React.Component<RepoProps, RepoState> {
@@ -23,20 +22,18 @@ class ReposPage extends React.Component<RepoProps, RepoState> {
     // Default the page to books repo list
     // So get the books page details
     var page: any = Pages.find(x => x.name === 'Books');
-    // Then get the books repository list
-    var repoObject: any = Repositories.find(x => x.name === 'Books');
-    // finally update the page state with the current values
-    this.state = {
-      page: page,
-      repoList: repoObject.repos.sort(this.compare)
-    };
+    page.repos = page.repos.sort(this.compare);
+    // update the page state with the current values
+    this.state = { page };
+
+    // console.dir(page);
+    // console.table(page.repos);
   }
 
   // componentDidMount() {
   //   console.log('ReposPage: componentDidMount()');
   // }
 
-  // TODO: This isn't working
   compare(a: Repository, b: Repository) {
     let comparison = 0;
     if (a.name < b.name) {
@@ -52,14 +49,13 @@ class ReposPage extends React.Component<RepoProps, RepoState> {
     console.log(`Selected topic: ${selectedTopic}`);
     // Find the page object that matches the selected topic
     var page: any = Pages.find(x => x.name === selectedTopic);
-    var repoObject: any = Repositories.find(x => x.name === selectedTopic);
-    console.table(repoObject.repos);
+    page.repos = page.repos.sort(this.compare);
+    // console.table(page.repos);
     // Update the current page title based on the selection
     document.title = `${page.titleTab}: John Wargo Code`;
     // Set our selected page to state
     this.setState({
       page: page,
-      repoList: repoObject.repos.sort(this.compare)
     });
   }
 
@@ -80,19 +76,38 @@ class ReposPage extends React.Component<RepoProps, RepoState> {
         </Form.Control>
         <h2>{this.state.page.titlePage}</h2>
         <p>{this.state.page.body}</p>
-        {/* <RepoList repoList={this.state.repoList.filter({{ this.state.page.category }})}/> */}
+        <RepoList page={this.state.page}/>
       </div>
     );
   }
 }
 
 type RepoListProps = {
-  repoList: Array<Repository>;
+  page: Page;
 }
-class RepoList extends React.Component<RepoListProps, {}> {
+
+class RepoList extends React.Component<RepoListProps> {
 
   render() {
-    return (<div><p>This is a test</p></div>);
+    if (this.props.page.repositories.length > 0) {
+      return (
+        <div className='container articles'>          
+          {this.props.page.repositories.map(function (repo, idx) {
+            return <div key={idx}>
+              <p className='title'><strong><a href={repo.url} target="_blank" rel="noreferrer">{repo.name}</a></strong></p>
+              <p className='summary'>{repo.description}</p>
+            </div>;
+          })}
+        </div>
+      );
+    } else {
+      return (
+        <div className='container'>
+          <h1>Repository Data Error</h1>
+          <p>No repository data to render (surprisingly).</p>
+        </div>
+      );
+    }
   }
 }
 

@@ -3,10 +3,8 @@
  * in here and I can render it all with just one page. 
 */
 
-// TODO: merge the two objects (page and repoList) into a single array
-
 import { Page } from './interfaces/page';
-import { RepositoryList } from './interfaces/repo';
+// import { RepositoryList } from './interfaces/repo';
 
 // Defines the different pages in the site and the content displayed on each page.
 // , {
@@ -21,55 +19,7 @@ export const Pages: Page[] = [
         titlePage: 'Book Code',
         titleTab: 'Books',
         body: 'Capicola turducken short loin beef, drumstick ham tail leberkas shank biltong. Fatback flank boudin shankle jerky ham. Porchetta filet mignon tri-tip jowl flank. Chuck pancetta doner leberkas turducken burgdoggen. Meatloaf tongue fatback bacon corned beef.',
-    }, {
-        name: 'Apache Cordova',
-        titlePage: 'Apache Cordova',
-        titleTab: 'Cordova',
-        body: 'Capicola turducken short loin beef, drumstick ham tail leberkas shank biltong. Fatback flank boudin shankle jerky ham. Porchetta filet mignon tri-tip jowl flank. Chuck pancetta doner leberkas turducken burgdoggen. Meatloaf tongue fatback bacon corned beef.',
-    }, {
-        name: 'Flutter',
-        titlePage: 'Flutter Development',
-        titleTab: 'Flutter',
-        body: 'Capicola turducken short loin beef, drumstick ham tail leberkas shank biltong. Fatback flank boudin shankle jerky ham. Porchetta filet mignon tri-tip jowl flank. Chuck pancetta doner leberkas turducken burgdoggen. Meatloaf tongue fatback bacon corned beef.',
-    }, {
-        name: 'Ionic',
-        titlePage: 'Ionic Development',
-        titleTab: 'Ionic',
-        body: 'Capicola turducken short loin beef, drumstick ham tail leberkas shank biltong. Fatback flank boudin shankle jerky ham. Porchetta filet mignon tri-tip jowl flank. Chuck pancetta doner leberkas turducken burgdoggen. Meatloaf tongue fatback bacon corned beef.',
-    }, {
-        name: 'IoT',
-        titlePage: 'IoT Projects',
-        titleTab: 'IoT',
-        body: 'Capicola turducken short loin beef, drumstick ham tail leberkas shank biltong. Fatback flank boudin shankle jerky ham. Porchetta filet mignon tri-tip jowl flank. Chuck pancetta doner leberkas turducken burgdoggen. Meatloaf tongue fatback bacon corned beef.',
-    }, {
-        name: 'Miscellaneous',
-        titlePage: 'Miscellaneous Stuff',
-        titleTab: 'Misc.',
-        body: 'Capicola turducken short loin beef, drumstick ham tail leberkas shank biltong. Fatback flank boudin shankle jerky ham. Porchetta filet mignon tri-tip jowl flank. Chuck pancetta doner leberkas turducken burgdoggen. Meatloaf tongue fatback bacon corned beef.',
-    }, {
-        name: 'Node',
-        titlePage: 'Node Modules',
-        titleTab: 'NodeJS',
-        body: 'Capicola turducken short loin beef, drumstick ham tail leberkas shank biltong. Fatback flank boudin shankle jerky ham. Porchetta filet mignon tri-tip jowl flank. Chuck pancetta doner leberkas turducken burgdoggen. Meatloaf tongue fatback bacon corned beef.',
-    }, {
-        name: 'Web',
-        titlePage: 'Web Development',
-        titleTab: 'Web',
-        body: 'Capicola turducken short loin beef, drumstick ham tail leberkas shank biltong. Fatback flank boudin shankle jerky ham. Porchetta filet mignon tri-tip jowl flank. Chuck pancetta doner leberkas turducken burgdoggen. Meatloaf tongue fatback bacon corned beef.',
-    }, {
-        name: 'Windows',
-        titlePage: 'Windows Development',
-        titleTab: 'Windows',
-        body: 'Capicola turducken short loin beef, drumstick ham tail leberkas shank biltong. Fatback flank boudin shankle jerky ham. Porchetta filet mignon tri-tip jowl flank. Chuck pancetta doner leberkas turducken burgdoggen. Meatloaf tongue fatback bacon corned beef.',
-    }
-];
-
-// Data for all of my public repositories.
-// look for an Empty record at the end of the array
-export const Repositories: RepositoryList[] = [
-    {
-        name: "Books",
-        repos: [
+        repositories: [
             {
                 name: 'learning-pwa-code',
                 url: 'https://github.com/johnwargo/learning-pwa-code',
@@ -97,8 +47,11 @@ export const Repositories: RepositoryList[] = [
             }
         ]
     }, {
-        name: "Apache Cordova",
-        repos: [
+        name: 'Apache Cordova',
+        titlePage: 'Apache Cordova',
+        titleTab: 'Cordova',
+        body: 'Capicola turducken short loin beef, drumstick ham tail leberkas shank biltong. Fatback flank boudin shankle jerky ham. Porchetta filet mignon tri-tip jowl flank. Chuck pancetta doner leberkas turducken burgdoggen. Meatloaf tongue fatback bacon corned beef.',
+        repositories: [
             {
                 name: 'johnwargo-cordova-plugin-mol',
                 url: 'https://github.com/johnwargo/johnwargo-cordova-plugin-mol',
@@ -110,8 +63,11 @@ export const Repositories: RepositoryList[] = [
             }
         ]
     }, {
-        name: "Flutter",
-        repos: [
+        name: 'Flutter',
+        titlePage: 'Flutter Development',
+        titleTab: 'Flutter',
+        body: 'Capicola turducken short loin beef, drumstick ham tail leberkas shank biltong. Fatback flank boudin shankle jerky ham. Porchetta filet mignon tri-tip jowl flank. Chuck pancetta doner leberkas turducken burgdoggen. Meatloaf tongue fatback bacon corned beef.',
+        repositories: [
             {
                 name: 'flutter-navigation-sample',
                 url: 'https://github.com/johnwargo/flutter-navigation-sample',
@@ -143,8 +99,11 @@ export const Repositories: RepositoryList[] = [
             }
         ]
     }, {
-        name: "Ionic",
-        repos: [
+        name: 'Ionic',
+        titlePage: 'Ionic Development',
+        titleTab: 'Ionic',
+        body: 'Capicola turducken short loin beef, drumstick ham tail leberkas shank biltong. Fatback flank boudin shankle jerky ham. Porchetta filet mignon tri-tip jowl flank. Chuck pancetta doner leberkas turducken burgdoggen. Meatloaf tongue fatback bacon corned beef.',
+        repositories: [
             {
                 name: 'weather-app-ionic-4',
                 url: 'https://github.com/johnwargo/weather-app-ionic-4',
@@ -168,8 +127,11 @@ export const Repositories: RepositoryList[] = [
             }
         ]
     }, {
-        name: "IoT",
-        repos: [
+        name: 'IoT',
+        titlePage: 'IoT Projects',
+        titleTab: 'IoT',
+        body: 'Capicola turducken short loin beef, drumstick ham tail leberkas shank biltong. Fatback flank boudin shankle jerky ham. Porchetta filet mignon tri-tip jowl flank. Chuck pancetta doner leberkas turducken burgdoggen. Meatloaf tongue fatback bacon corned beef.',
+        repositories: [
             {
                 name: 'tessel_weather_station',
                 url: 'https://github.com/johnwargo/tessel_weather_station',
@@ -237,8 +199,11 @@ export const Repositories: RepositoryList[] = [
             }
         ]
     }, {
-        name: "Miscellaneous",
-        repos: [
+        name: 'Miscellaneous',
+        titlePage: 'Miscellaneous Stuff',
+        titleTab: 'Misc.',
+        body: 'Capicola turducken short loin beef, drumstick ham tail leberkas shank biltong. Fatback flank boudin shankle jerky ham. Porchetta filet mignon tri-tip jowl flank. Chuck pancetta doner leberkas turducken burgdoggen. Meatloaf tongue fatback bacon corned beef.',
+        repositories: [
             {
                 name: 'phonegapday-2017',
                 url: 'https://github.com/johnwargo/phonegapday-2017',
@@ -254,8 +219,11 @@ export const Repositories: RepositoryList[] = [
             }
         ]
     }, {
-        name: "Node",
-        repos: [
+        name: 'Node',
+        titlePage: 'Node Modules',
+        titleTab: 'NodeJS',
+        body: 'Capicola turducken short loin beef, drumstick ham tail leberkas shank biltong. Fatback flank boudin shankle jerky ham. Porchetta filet mignon tri-tip jowl flank. Chuck pancetta doner leberkas turducken burgdoggen. Meatloaf tongue fatback bacon corned beef.',
+        repositories: [
             {
                 name: 'ionic-build-info',
                 url: 'https://github.com/johnwargo/ionic-build-info',
@@ -311,8 +279,11 @@ export const Repositories: RepositoryList[] = [
             }
         ]
     }, {
-        name: "Web",
-        repos: [
+        name: 'Web',
+        titlePage: 'Web Development',
+        titleTab: 'Web',
+        body: 'Capicola turducken short loin beef, drumstick ham tail leberkas shank biltong. Fatback flank boudin shankle jerky ham. Porchetta filet mignon tri-tip jowl flank. Chuck pancetta doner leberkas turducken burgdoggen. Meatloaf tongue fatback bacon corned beef.',
+        repositories: [
             {
                 name: 'react-samples-t3',
                 url: 'https://github.com/johnwargo/react-samples-t3',
@@ -332,8 +303,11 @@ export const Repositories: RepositoryList[] = [
             }
         ]
     }, {
-        name: "Windows",
-        repos: [
+        name: 'Windows',
+        titlePage: 'Windows Development',
+        titleTab: 'Windows',
+        body: 'Capicola turducken short loin beef, drumstick ham tail leberkas shank biltong. Fatback flank boudin shankle jerky ham. Porchetta filet mignon tri-tip jowl flank. Chuck pancetta doner leberkas turducken burgdoggen. Meatloaf tongue fatback bacon corned beef.',
+        repositories: [
             {
                 name: 'Outlook-Kill-Country-Delphi',
                 url: 'https://github.com/johnwargo/Outlook-Kill-Country-Delphi',
@@ -354,6 +328,38 @@ export const Repositories: RepositoryList[] = [
         ]
     }
 ];
+
+// Data for all of my public repositories.
+// look for an Empty record at the end of the array
+// export const Repositories: RepositoryList[] = [
+//     {
+//         name: "Books",
+
+//     }, {
+//         name: "Apache Cordova",
+
+//     }, {
+//         name: "Flutter",
+
+//     }, {
+//         name: "Ionic",
+//     }, {
+//         name: "IoT",
+
+//     }, {
+//         name: "Miscellaneous",
+
+//     }, {
+//         name: "Node",
+
+//     }, {
+//         name: "Web",
+
+//     }, {
+//         name: "Windows",
+
+//     }
+// ];
 
 // ,{
 //     name: '',

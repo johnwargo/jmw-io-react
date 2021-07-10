@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './pages.css';
+import './page.css';
 
 class BooksPage extends React.Component {
 

@@ -1,6 +1,3 @@
-// TODO: Add Node page
-// TODO: Add Flutter page
-
 import React from 'react';
 import ReactGA from 'react-ga';
 import { Router, Switch, Route } from 'react-router-dom';
@@ -10,17 +7,20 @@ import { createBrowserHistory } from 'history';
 
 // The app's page components
 import AboutPage from './pages/about';
-import AllPage from './pages/all';
 import BooksPage from './pages/books';
-import FlutterPage from './pages/flutter';
 import HomePage from './pages/home';
-import IotPage from './pages/iot';
-import MiscellaneousPage from './pages/misc';
-import MobilePage from './pages/mobile';
-import NodePage from './pages/node';
-import ReposPage from './pages/repos';
-import WebPage from './pages/web';
-import WindowsPage from './pages/windows';
+import TopicPage from './pages/page';
+
+// import ReposPage from './pages/repos';
+
+// import AllPage from './pages/all';
+// import FlutterPage from './pages/flutter';
+// import IotPage from './pages/iot';
+// import MiscellaneousPage from './pages/misc';
+// import MobilePage from './pages/mobile';
+// import NodePage from './pages/node';
+// import WebPage from './pages/web';
+// import WindowsPage from './pages/windows';
 
 import './App.css';
 // Build information package
@@ -95,30 +95,30 @@ class App extends React.Component {
               <LinkContainer to="/books">
                 <Nav.Link>Books</Nav.Link>
               </LinkContainer>
-              <LinkContainer to="/repos">
+              {/* <LinkContainer to="/repos">
                 <Nav.Link>Repositories</Nav.Link>
+              </LinkContainer> */}
+              <LinkContainer to="/cordova">
+                <Nav.Link>Cordova</Nav.Link>
               </LinkContainer>
-              {/* <LinkContainer to="/flutter">
+              <LinkContainer to="/flutter">
                 <Nav.Link>Flutter</Nav.Link>
               </LinkContainer>
               <LinkContainer to="/iot">
                 <Nav.Link>IoT</Nav.Link>
               </LinkContainer>
               <LinkContainer to="/misc">
-                <Nav.Link>Misc.</Nav.Link>
-              </LinkContainer>
-              <LinkContainer to="/mobile">
-                <Nav.Link>Mobile</Nav.Link>
+                <Nav.Link>Miscellaneous</Nav.Link>
               </LinkContainer>
               <LinkContainer to="/node">
                 <Nav.Link>NodeJS</Nav.Link>
               </LinkContainer>
               <LinkContainer to="/web">
                 <Nav.Link>Web</Nav.Link>
-              </LinkContainer>              
+              </LinkContainer>
               <LinkContainer to="/windows">
                 <Nav.Link>Windows</Nav.Link>
-              </LinkContainer> */}
+              </LinkContainer>
               <NavDropdown title="About" id="basic-nav-dropdown">
                 <LinkedMenuItem linkTarget="/about" linkText="Me" />
                 <NavDropdown.Item onClick={() => this.loadExternalUrl("https://johnwargo.com")}>
@@ -136,36 +136,33 @@ class App extends React.Component {
           <Route path="/about">
             <AboutPage />
           </Route>
-          <Route path="/all">
+          {/* <Route path="/all">
             <AllPage />
-          </Route>
+          </Route> */}
           <Route path="/books">
             <BooksPage />
           </Route>
-          {/* <Route path="/flutter">
-            <FlutterPage />
+          <Route path="/cordova">
+            <TopicPage topic='Apache Cordova' />
+          </Route>
+          <Route path="/flutter">
+            <TopicPage topic='Flutter' />
           </Route>
           <Route path="/iot">
-            <IotPage />
+            <TopicPage topic='IoT' />
           </Route>
           <Route path="/misc">
-            <MiscellaneousPage />
-          </Route>
-          <Route path="/mobile">
-            <MobilePage />
-          </Route>
+            <TopicPage topic='Miscellaneous' />
+          </Route>          
           <Route path="/node">
-            <NodePage />
-          </Route> */}
-          <Route path="/repos">
-            <ReposPage />
-          </Route>
-          {/* <Route path="/web">
-            <WebPage />
+            <TopicPage topic='Node' />
+          </Route>          
+          <Route path="/web">
+            <TopicPage topic='Web' />
           </Route>
           <Route path="/windows">
-            <WindowsPage />
-          </Route> */}
+            <TopicPage topic='Windows' />
+          </Route>
           <Route path="/">
             <HomePage />
           </Route>

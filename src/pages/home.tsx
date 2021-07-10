@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'react-bootstrap/Image'
 
-import './pages.css';
+import './page.css';
 
 class HomePage extends React.Component {
 
