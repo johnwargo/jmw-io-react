@@ -218,64 +218,64 @@ export const Pages: Page[] = [
         name: 'Node',
         titlePage: 'Node Modules',
         titleTab: 'NodeJS',
-        body: "",
+        body: "I love developing in NodeJS; I've written a few Express applications, but a lot of the work I do is in building command-line utilities that you'll find listed here. In the old days, you'd write batch files (Windows) or shell scripts (linux, macOS) when you encounter something you want to automate. With all of the web development tooling moving to the command-line, node is the most common way of building interactive utilities. When I find an interesting problem I think I can solve with a little utility, I write it and share it with the world through the repositories you see below.",
         repositories: [
             {
-                name: 'ionic-build-info',
+                name: 'Ionic Build Information Module',
                 url: 'https://github.com/johnwargo/ionic-build-info',
-                description: "Updates a build info module in an Ionic project"
+                description: "I was working in an Ionic project and realized that I wanted to write the app's build details the the console at startup but couldn't figure out the most efficient way. After doing some research I realized that the solution I needed didn't exist, so I created one. When you run this utility in an Ionic project folder, it updates a build info module in the project. The app can then import the module and use data in it to write build number and build date information to the console."
             }, {
-                name: 'react-build-info',
+                name: 'ReactJS Build Information Module',
                 url: 'https://github.com/johnwargo/react-build-info',
-                description: "Adds build info to an React project"
+                description: "I was working in an React JS project and realized that I wanted to write the app's build details the the console at startup but couldn't figure out the most efficient way. After doing some research I realized that the solution I needed didn't exist, so I created one. When you run this utility in a ReactJS project folder, it updates a build info module in the project. The app can then import the module and use data in it to write build number and build date information to the console."
             }, {
-                name: 'cdva-make-merges',
+                name: 'Apache Cordova Make Merges Folders Module',
                 url: 'https://github.com/johnwargo/cdva-make-merges',
-                description: "Automates the creation of the Cordova merges folders for each platform added to the project"
+                description: "The Apache Cordova CLI enables developers to insert different versions of files into an application based on the target platform. You do this though the creation of a set of folders in your project and put the platform-specific files in the appropriate folder. This silly little node command automates the creation of the Cordova merges folders for each platform currently included in the project."
             }, {
-                name: 'cdva-make-hooks',
+                name: 'Apache Cordova Make Hooks Folders Module',
                 url: 'https://github.com/johnwargo/cdva-make-hooks',
-                description: "Automating the creation of the Cordova Hooks folders"
+                description: "The Apache Cordova CLI enables developers to execute external commands during the build process. This has changed over time, but when I created this module, developers enabled this feature by adding their executables to different project folders depending on when they wanted the tasks to run. This silly little node command automated the creation of the Cordova Hooks folders."
             }, {
-                name: 'cdva-create',
+                name: 'Apache Cordova Create Module',
                 url: 'https://github.com/johnwargo/cdva-create',
-                description: "A node module for creating a simple Cordova project with a couple of common plugins and platforms. Module is configurable via a configuration file."
+                description: "The Apache Cordova CLI includes the create command that enables developers to quickly create a new project. This is my replacement for that command. After using the Cordova CLI command for many months, I realized that there were a whole suite of commands I executed every time I created a new project. I decided to make a simple node module that creates a simple Cordova project with a all of my default plugins and platforms. The module is configurable via a configuration file which is automatically created the first time the command runs."
             }, {
-                name: 'box-long-polling-node',
+                name: 'Box Long Polling Module',
                 url: 'https://github.com/johnwargo/box-long-polling-node',
-                description: "A simple NodeJS command that exercises the Box Long Polling API"
+                description: "I was playing around with the Box API, and created this simple node command line module to exercise the Box Long Poll API."
             }, {
-                name: 'moddable-helper',
+                name: 'Moddable CLI Helper Module',
                 url: 'https://github.com/johnwargo/moddable-helper',
-                description: "Node-based CLI command helper for the Moddable SDK"
+                description: "I think the Moddable platform is pretty interesting, but the platform tooling is very command-line heavy and I noticed that there were some ways to simplify the process of building and deploying code to devices. To help with this, I created this module which adds a `mddbl` command wrapper around some of the Moddable SDK commands."
             }, {
-                name: 'firebase-functions-deploy-helper',
+                name: 'Firebase Functions Deployment Helper Module',
                 url: 'https://github.com/johnwargo/firebase-functions-deploy-helper',
-                description: "Simplifies deployment of a subset of Firebase Functions (because of Firebase deployment quota limits)"
+                description: "I did a lot of Firebase Functions development in early 2021 and regularly bumped up against Functions deployment quotas. To get around them, I built this simple CLI that simplifies deployment of a subset of a project's Firebase Functions. This module delivers an easy way to deploy parts of your functions catalog with a few simple commands."
             }, {
-                name: 'flutter-folders',
+                name: 'Flutter Folders Module',
                 url: 'https://github.com/johnwargo/flutter-folders',
-                description: "A simple node module for creating project subfolders in a Flutter project's lib folder"
+                description: "As I started working in Flutter, a book I read showed me how to create a simple Flutter project folder structure to help me organize my code. I liked that idea, and with a few tweaks that fit my coding style, I built a CLI that automates the process of creating my default project structure."
             }, {
-                name: 'make-readme',
+                name: 'Make Readme Module',
                 url: 'https://github.com/johnwargo/make-readme',
-                description: "Node module that creates a 'blank' readme file in the current folder."
+                description: "When I first encountered Markdown and .md files, I started looking for an easy way to create a project's readme file. This project is a Node module that creates a 'blank' readme file in the current folder with the project folder's name as the Heading 1 level in the file.  It's a really silly and useless module, something you can do easily today with the `touch` command available on Linux and macOS. I didn't have this on Windows, so that's why I created this; I've since figured out how to do this on Windows with the 'touch' command."
             }, {
-                name: 'make-md',
+                name: 'Make MD File Module',
                 url: 'https://github.com/johnwargo/make-md',
-                description: "Simple node module for creating .md files."
+                description: "This is a variant of the make-reamdme module. A silly and stupid module  for creating .md files. This is easily superseded by the existing `touch` command available in most modern operating systems."
             }, {
-                name: 'jekyll-copy',
+                name: 'Jekyll Template File Copy Module',
                 url: 'https://github.com/johnwargo/jekyll-copy',
-                description: "Jekyll Copy Node module"
+                description: "When I began building Jekyll-based sites more frequently, the Jekyll team had just moved their template files from the current project to a shared location on the development system. To modify the files, you had to find the template files and copy the ones you wanted to modify to the same folders in your Jekyll project folder. I created this CLI to simplify the process of identifying the template folder location, listing the available template files, and copying the template files to the current Jekyll project folder."
             }, {
-                name: 'ignorevscode',
+                name: 'Ignore Visual Studio Code Files Module',
                 url: 'https://github.com/johnwargo/ignorevscode',
-                description: "Node module that updates a folder's .gitignore file to ignore Visual Studio Code files"
+                description: "When I first started using Visual Studio Code, I noticed that the editor created `.vscode` folder in the project where it stored its internal files. Recognizing that I didn't always need this folder propogating around on my different systems, I created this simple Node module that updates a folder's .gitignore file to ignore that folder."
             }, {
-                name: 'ics-update',
+                name: 'ICS File Update',
                 url: 'https://github.com/johnwargo/ics-update',
-                description: "A Node module for updating an .ics file and launching it"
+                description: "This one's a weird one. A friend of mine wanted an easy way to update and send a pre-configured calendar invite, so I created a simple Node module to update an existing `.ics` file and launching it in the default calendar application."
             }
         ]
     }, {
