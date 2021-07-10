@@ -16,37 +16,39 @@ type RepoListProps = {
   repositories: Repository[];
 }
 
+const debug=false;  // turns off writing to the console
+
 class TopicPage extends React.Component<PageProps, PageState> {
 
   constructor(props: PageProps) {
-    console.log('TopicPage: constructor()');
+    if (debug) console.log('TopicPage: constructor()');
     super(props);
     this.state = { page: emptyPage };
   }
 
   componentDidMount() {
-    console.log(`TopicPage: componentDidMount(${this.props.topic})`);
-    var page: any = Pages.find(x => x.name === this.props.topic);
-    if (page) {
-      this.updatePage(this.props.topic);      
-    } else {
-      console.error('No page found');
-    }
+    if (debug) console.log(`TopicPage: componentDidMount(${this.props.topic})`);
+    this.updatePage(this.props.topic);
   }
 
   componentDidUpdate(prevProps: PageProps) {
-    console.log(`TopicPage: componentDidUpdate(${this.props.topic})`);
     if (this.props.topic !== prevProps.topic) {
+      if (debug) console.log(`TopicPage: componentDidUpdate(${this.props.topic})`);
       this.updatePage(this.props.topic);
-    } 
+    }
   }
 
-  updatePage(topic: string){
+  updatePage(topic: string) {
     var page: any = Pages.find(x => x.name === topic);
-    // TODO: Only sort this once
-    page.repositories = page.repositories.sort(this.compare);
-    document.title = `${page.titleTab}: John Wargo Code`;
-    this.setState({ page });
+    if (page) {
+      // TODO: Only sort this once
+      page.repositories = page.repositories.sort(this.compare);
+      document.title = `${page.titleTab}: John Wargo Code`;
+      this.setState({ page });
+    } else {
+      console.error(`Unable to locate page: "${topic}"`);
+      this.setState({ page: emptyPage });
+    }
   }
 
   compare(a: Repository, b: Repository) {
@@ -60,13 +62,22 @@ class TopicPage extends React.Component<PageProps, PageState> {
   }
 
   render() {
-    return (
-      <div className='container' >
-        <h1>{this.state.page.titlePage}</h1>
-        <p>{this.state.page.body}</p>
-        <RepoList repositories={this.state.page.repositories} />
-      </div>
-    );
+    if (this.state.page.name.length > 0) {
+      return (
+        <div className='container' >
+          <h1>{this.state.page.titlePage}</h1>
+          <p>{this.state.page.body}</p>
+          <RepoList repositories={this.state.page.repositories} />
+        </div>
+      );
+    } else {
+      return (
+        <div className='container' >
+          <h1>Oops</h1>
+          <p>This is embarrassing; I can't seem to find that page. This is clearly a coding problem, so please let the site owner know.</p>
+        </div>
+      );
+    }
   }
 }
 
@@ -87,12 +98,13 @@ class RepoList extends React.Component<RepoListProps> {
     } else {
       return (
         <div className='container'>
-          <h1>Repository Data Error</h1>
-          <p>No repository data to render (surprisingly).</p>
+          <h1>Oops</h1>
+          <p>This is embarrassing; I can't seem to find that repository data. This is clearly a coding problem, so please let the site owner know.</p>
         </div>
       );
     }
   }
 }
+
 
 export default TopicPage;

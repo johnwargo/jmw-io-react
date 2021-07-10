@@ -1,3 +1,10 @@
+/** 
+ * This is a test page I created to enable me to select the 
+ * page content displayed from a combo box. This quickly morphed 
+ * to the single page construct the site uses today. 
+ * 
+ * This page is obsolete (for now)
+*/
 import React from 'react';
 import { Form } from "react-bootstrap";
 

@@ -11,21 +11,16 @@ import BooksPage from './pages/books';
 import HomePage from './pages/home';
 import TopicPage from './pages/page';
 
-// import ReposPage from './pages/repos';
-
-// import AllPage from './pages/all';
-// import FlutterPage from './pages/flutter';
-// import IotPage from './pages/iot';
-// import MiscellaneousPage from './pages/misc';
-// import MobilePage from './pages/mobile';
-// import NodePage from './pages/node';
-// import WebPage from './pages/web';
-// import WindowsPage from './pages/windows';
-
 import './App.css';
 // Build information package
 import buildInfo from './buildInfo';
 
+// TODO: Build out the Books page
+// TODO: Populate all of the page content
+// TODO: Populate all of the repository content
+// TODO: Get google analytics working
+
+// Define the props used to render menu items
 type LinkProps = {
   linkText: string,
   linkTarget: string
@@ -95,9 +90,6 @@ class App extends React.Component {
               <LinkContainer to="/books">
                 <Nav.Link>Books</Nav.Link>
               </LinkContainer>
-              {/* <LinkContainer to="/repos">
-                <Nav.Link>Repositories</Nav.Link>
-              </LinkContainer> */}
               <LinkContainer to="/cordova">
                 <Nav.Link>Cordova</Nav.Link>
               </LinkContainer>
@@ -136,9 +128,6 @@ class App extends React.Component {
           <Route path="/about">
             <AboutPage />
           </Route>
-          {/* <Route path="/all">
-            <AllPage />
-          </Route> */}
           <Route path="/books">
             <BooksPage />
           </Route>
