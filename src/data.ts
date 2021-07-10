@@ -198,20 +198,20 @@ export const Pages: Page[] = [
         name: 'Miscellaneous',
         titlePage: 'Miscellaneous Stuff',
         titleTab: 'Misc.',
-        body: "",
+        body: "This page is a place for me to list repositories that don't fit the other categories. What you'll find here are repositories related to several conference presentations I've given over the years plus the source code to accompany my Hackspace Magazine articles.",
         repositories: [
             {
-                name: 'phonegapday-2017',
+                name: 'PhoneGap Day Presentation 2017',
                 url: 'https://github.com/johnwargo/phonegapday-2017',
-                description: "Source code for my PhoneGap Day 2017 presentation"
+                description: "The source code for my PhoneGap Day 2017 presentation. In this session, I demonstrated how to add support for Microsoft's Cordova Simulate to an Apache Cordova plugin."
             }, {
-                name: 'NCDevCon-2017',
+                name: 'NCDevCon Presentation 2017',
                 url: 'https://github.com/johnwargo/NCDevCon-2017',
-                description: "Source code for the sample applications demonstrated during my NCDevCon 2017 session"
+                description: "The source code for the sample applications demonstrated during my NCDevCon 2017 session. For this session, I showed (rather quickly) how to build applications using different cross-platform mobile frameworks."
             }, {
-                name: 'hackspace-article-code',
+                name: 'Hackspace Magazine Code',
                 url: 'https://github.com/johnwargo/hackspace-article-code',
-                description: "Source code for my Hackspace Magazine articles"
+                description: "The source code from all of my (4) Hackspace Magazine articles."
             }
         ]
     }, {
