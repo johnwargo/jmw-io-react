@@ -27,7 +27,7 @@ export const Pages: Page[] = [
             }, {
                 name: 'Apache Cordova 3 Programming',
                 url: 'https://github.com/johnwargo/cordova-programming-code',
-                description: 'Hosts the source code from my Apache Cordova 3 Programming book.'
+                description: "Hosts the source code from my Apache Cordova 3 Programming book."
             }, {
                 name: 'BlackBerry Development Fundamentals',
                 url: 'https://github.com/johnwargo/blackberry-development-fundamentals-code',
@@ -35,15 +35,15 @@ export const Pages: Page[] = [
             }, {
                 name: 'Apache Cordova API Cookbook',
                 url: 'https://github.com/johnwargo/apache-cordova-api-cookbook-code',
-                description: 'Hosts the source code from my Apache Cordova API Cookbook book.'
+                description: "Hosts the source code from my Apache Cordova API Cookbook book."
             }, {
                 name: 'Apache Cordova 4 Programming',
                 url: 'https://github.com/johnwargo/ac4p',
-                description: 'Hosts the source code from my Apache Cordova 4 Programming',
+                description: "Hosts the source code from my Apache Cordova 4 Programming"
             }, {
                 name: 'PhoneGap Essentials',
                 url: 'https://github.com/johnwargo/phonegap-essentials-code',
-                description: 'Host the source code for my PhoneGap Essentials book. This was my first book on Apache Cordova (Cordova was called PhoneGap at the time). I ultimately wrote 4 books on the topic and worked on several commercial products related to Apache Cordova in my career since then.'
+                description: "Host the source code for my PhoneGap Essentials book. This was my first book on Apache Cordova (Cordova was called PhoneGap at the time). I ultimately wrote 4 books on the topic and worked on several commercial products related to Apache Cordova in my career since then."
             }
         ]
     }, {
@@ -126,72 +126,72 @@ export const Pages: Page[] = [
         name: 'IoT',
         titlePage: 'IoT Projects',
         titleTab: 'IoT',
-        body: "",
+        body: "It has been very a long time since my day job was writing code, and I still prefer writing code to most other things, so I spend what time I can, well, writing code. I also love playing with different single board computers (SBC) and microcontrollers, so, as you can see here, my biggest list of repositories is here. The repository list below reflects all of my public projects for Raspberry Pi, Arduino, Tessel, Particle, and who knows what else.",
         repositories: [
             {
-                name: 'tessel_weather_station',
+                name: 'Tessell Weather Station (Weather Underground)',
                 url: 'https://github.com/johnwargo/tessel_weather_station',
-                description: 'Tessel 2 Weather Station with Weather Underground'
+                description: "I'm very interested in JavaScript-based microcontrollers  and the Tessel 2 is my current favorite. When I ordered my first couple of Tessel devices, I picked up their Climate module which provides simple environmental measurements. With that in hand, what else could I do but build a weather station that uploaded local conditions to Weather Underground."
             }, {
-                name: 'tessel-m2x-weather-station',
+                name: 'Tessel Weather Station (M2X)',
                 url: 'https://github.com/johnwargo/tessel-m2x-weather-station',
-                description: 'Tessel 2 weather station with AT&T M2X data upload'
+                description: "I'm very interested in JavaScript-based microcontrollers  and the Tessel 2 is my current favorite. When I ordered my first couple of Tessel devices, I picked up their Climate module which provides simple environmental measurements. This is a Tessel-based weather station similar to the Tessel Weather Station (Weather Underground) below; this one uploads its weather data to the AT&T M2X service. At the time I built this, I was doing some freelance writing for AT&T and their IoT platform, and this weather station gave me an excellent platform to send data to their data storage service."
             }, {
-                name: 'tessel-garage-door-controller',
+                name: 'Tessel Garage Door Controller',
                 url: 'https://github.com/johnwargo/tessel-garage-door-controller',
-                description: 'Tessel 2 Garage Door Controller'
+                description: "I'm very interested in JavaScript-based microcontrollers  and the Tessel 2 is my current favorite. When I ordered my first couple of Tessel devices, I picked up their Relay module which provides a simple way to programatically control a switch. Of course one of the projects I had to do was a remote garage door opener. This project hosts a web server on the Tessel device and provides a simple interface for opening/closing my garage door. I later built a much more capable version of this on the Particle platform that I've had running in my garage for years now."
             }, {
-                name: 'seeed-studio-relay-v2',
+                name: 'Seeed Studio Relay Board Library (V2)',
                 url: 'https://github.com/johnwargo/seeed-studio-relay-v2',
-                description: 'An updated version of the Python library for the Seeed Studio Relay Board'
+                description: "This is an updated version of the Python library for the Seeed Studio Relay Board. In this version, I updated the library to support multiple relay boards."
             }, {
-                name: 'seeed-studio-relay-board',
+                name: 'Seeed Studio Relay Board Library (V1)',
                 url: 'https://github.com/johnwargo/seeed-studio-relay-board',
-                description: 'Python library for the Seeed Studio Relay Board'
+                description: "I love playing with relays, so I've picked up every relay board I can find for Raspberry Pi. One of them is the board from Seeed (three E's, not sure why) Studio. When I started playing with their board, I noticed that example code and detailed instructions were lacking, so I repackaged their code into a Python library and updated the documentation. Seeed later updated their Wiki page for the board to point to my repo here."
             }, {
-                name: 'raspberry-pi-relay-timer',
+                name: 'Raspberry Pi Relay Timer',
                 url: 'https://github.com/johnwargo/raspberry-pi-relay-timer',
-                description: 'Raspberry Pi relay timer'
+                description: "As I played with the different relay boards for the Raspberry Pi, I built this timer application that enabled me to turn a relay on and off on a particular scheduled. I built versions of this for Arduino, but the Raspberry Pi platform enabled me to do more interesting things like support dynamic time ranges and turning the relay on or off based on sunrise and sunset times for the current location."
             }, {
-                name: 'raspberry-pi-relay-controller-seeed',
+                name: 'Raspberry Pi Relay Controller (Seeed Studio)',
                 url: 'https://github.com/johnwargo/raspberry-pi-relay-controller-seeed',
-                description: 'Web-based relay controller application for the Seeed Studio Raspberry Pi Relay Board V1.0'
+                description: "Along with the Seeed Studio Relay board library, I needed an application to test it, so I built this web-based relay controller application for the Seeed Studio Raspberry Pi Relay Board V1.0. It only supports a single relay board and gives you a simple ui (Bootstrap-based) for interacting with the state of the relays."
             }, {
-                name: 'pi-remind-zero-blinkt',
+                name: 'Pi Remind Zero Blinkt!',
                 url: 'https://github.com/johnwargo/pi-remind-zero-blinkt',
-                description: 'Pi Remind project for the Pi Zero W and Blinkt LED Array'
+                description: "This is the third version of my Pi Remind project, built using the Raspberry Pi Zero and the Pimoroni Blinkt! (8 LEDs)."
             }, {
-                name: 'pi-remind-hd',
+                name: 'Pi Remind HD',
                 url: 'https://github.com/johnwargo/pi-remind-hd',
-                description: 'Raspberry Pi Google Calendar Reminder app, uses the Pimoroni Unicorn HAT HD'
+                description: "This is the second version of my Pi Remind project, built using the Pimoroni Unicorn HAT HD (256 LEDs)."
             }, {
-                name: 'pi-remind',
+                name: 'Pi Remind',
                 url: 'https://github.com/johnwargo/pi-remind',
-                description: 'Raspberry Pi Google Calendar Reminder'
+                description: "Pi Remind is a series of projects I built using the Raspberry Pi. Essentially this connects the Pi to my Google Calendar and visually reminds me of my upcoming appointments. This is the very first version, built using the Pimoroni Unicorn HAT (64 LEDs)."
             }, {
-                name: 'pi-relay-controller-modmypi',
+                name: 'Raspberry Pi Relay Controller (ModMyPi)',
                 url: 'https://github.com/johnwargo/pi-relay-controller-modmypi',
-                description: 'Raspberry Pi Relay Controller server for the ModMyPi Relay Board'
+                description: "This project implements a simple web-based application to control the ModMyPi Relay Board. It runs as a Flask application on the Raspberry Pi delivering a simple web app to interact with the relay board."
             }, {
-                name: 'pi-weather-station-simple',
+                name: 'Raspberry Pi Weather Station (Simple)',
                 url: 'https://github.com/johnwargo/pi-weather-station-simple',
-                description: 'Raspberry Pi Weather Station using simple sensor'
+                description: "This is a version of the Raspberry Pi Weather Station that uses a simple environmental sensor rather than the Astro Pi board. It's designed to be a less expensive alternative."
             }, {
-                name: 'pi-weather-station',
+                name: 'Raspberry Pi Weather Station',
                 url: 'https://github.com/johnwargo/pi-weather-station',
-                description: 'Raspberry Pi Sense HAT, Weather Underground station'
+                description: "When the Raspberry Pi community sent the Raspberry Pi Sense HAT to the International Space Station through the Astro Pi project, I knew I needed to get one and play with it. The result? A Raspberry Pi-based weather station that uploads data to Weather Underground. This project was published in Make Magazine"
             }, {
-                name: 'glowing-pumpkin-trinket-neopixel',
+                name: 'Arduino Glowing Pumpkin (Trinket & NeoPixel)',
                 url: 'https://github.com/johnwargo/glowing-pumpkin-trinket-neopixel',
-                description: 'Arduino-powered glowing pumpkin using NeoPixel ring'
+                description: "I built a bunch of these years ago and we put them in pumpkins in all of our front upstairs windows at Halloween. The project randomly fades in and out multiple Halloweeny colors (red, orange, purple, etc.) with periodic lightning or electricity flashes. This version uses the Adafruit Trinket board."
             }, {
-                name: 'glowing-pumpkin-feather',
+                name: 'Arduino Glowing Pumpkin (Feather & NeoPixel)',
                 url: 'https://github.com/johnwargo/glowing-pumpkin-feather',
-                description: 'Adafruit Feather version of my Glowing Pumpkin project'
+                description: "This project is very similar to the other Glowing Pumpkin project although this is designed for a huge pumpkin and uses the Adafruit Feather board."
             }, {
-                name: 'pi-remind-hd-notify',
+                name: 'Pi Remind HD Notify',
                 url: 'https://github.com/johnwargo/pi-remind-hd-notify',
-                description: 'Pi Remind HD project enhanced to work with the Remote Notify project'
+                description: "This is the most recent edition of Pi Remind. This one enhances the Pi Remind HD project by connecting it to the Remote Notify device enabling me to automatically indicate to my family when I'm busy and available. My intention is to release the Remote Notify device as a commercial product."
             }
         ]
     }, {
@@ -203,15 +203,15 @@ export const Pages: Page[] = [
             {
                 name: 'phonegapday-2017',
                 url: 'https://github.com/johnwargo/phonegapday-2017',
-                description: 'Source code for my PhoneGap Day 2017 presentation'
+                description: "Source code for my PhoneGap Day 2017 presentation"
             }, {
                 name: 'NCDevCon-2017',
                 url: 'https://github.com/johnwargo/NCDevCon-2017',
-                description: 'Source code for the sample applications demonstrated during my NCDevCon 2017 session'
+                description: "Source code for the sample applications demonstrated during my NCDevCon 2017 session"
             }, {
                 name: 'hackspace-article-code',
                 url: 'https://github.com/johnwargo/hackspace-article-code',
-                description: 'Source code for my Hackspace Magazine articles'
+                description: "Source code for my Hackspace Magazine articles"
             }
         ]
     }, {
@@ -223,35 +223,35 @@ export const Pages: Page[] = [
             {
                 name: 'ionic-build-info',
                 url: 'https://github.com/johnwargo/ionic-build-info',
-                description: 'Updates a build info module in an Ionic project'
+                description: "Updates a build info module in an Ionic project"
             }, {
                 name: 'react-build-info',
                 url: 'https://github.com/johnwargo/react-build-info',
-                description: 'Adds build info to an React project'
+                description: "Adds build info to an React project"
             }, {
                 name: 'cdva-make-merges',
                 url: 'https://github.com/johnwargo/cdva-make-merges',
-                description: 'Automates the creation of the Cordova merges folders for each platform added to the project'
+                description: "Automates the creation of the Cordova merges folders for each platform added to the project"
             }, {
                 name: 'cdva-make-hooks',
                 url: 'https://github.com/johnwargo/cdva-make-hooks',
-                description: 'Automating the creation of the Cordova Hooks folders'
+                description: "Automating the creation of the Cordova Hooks folders"
             }, {
                 name: 'cdva-create',
                 url: 'https://github.com/johnwargo/cdva-create',
-                description: 'A node module for creating a simple Cordova project with a couple of common plugins and platforms. Module is configurable via a configuration file.'
+                description: "A node module for creating a simple Cordova project with a couple of common plugins and platforms. Module is configurable via a configuration file."
             }, {
                 name: 'box-long-polling-node',
                 url: 'https://github.com/johnwargo/box-long-polling-node',
-                description: 'A simple NodeJS command that exercises the Box Long Polling API'
+                description: "A simple NodeJS command that exercises the Box Long Polling API"
             }, {
                 name: 'moddable-helper',
                 url: 'https://github.com/johnwargo/moddable-helper',
-                description: 'Node-based CLI command helper for the Moddable SDK'
+                description: "Node-based CLI command helper for the Moddable SDK"
             }, {
                 name: 'firebase-functions-deploy-helper',
                 url: 'https://github.com/johnwargo/firebase-functions-deploy-helper',
-                description: 'Simplifies deployment of a subset of Firebase Functions (because of Firebase deployment quota limits)'
+                description: "Simplifies deployment of a subset of Firebase Functions (because of Firebase deployment quota limits)"
             }, {
                 name: 'flutter-folders',
                 url: 'https://github.com/johnwargo/flutter-folders',
@@ -259,23 +259,23 @@ export const Pages: Page[] = [
             }, {
                 name: 'make-readme',
                 url: 'https://github.com/johnwargo/make-readme',
-                description: 'Node module that creates a \'blank\' readme file in the current folder.'
+                description: "Node module that creates a 'blank' readme file in the current folder."
             }, {
                 name: 'make-md',
                 url: 'https://github.com/johnwargo/make-md',
-                description: 'Simple node module for creating .md files.'
+                description: "Simple node module for creating .md files."
             }, {
                 name: 'jekyll-copy',
                 url: 'https://github.com/johnwargo/jekyll-copy',
-                description: 'Jekyll Copy Node module'
+                description: "Jekyll Copy Node module"
             }, {
                 name: 'ignorevscode',
                 url: 'https://github.com/johnwargo/ignorevscode',
-                description: 'Node module that updates a folder\'s .gitignore file to ignore Visual Studio Code files'
+                description: "Node module that updates a folder's .gitignore file to ignore Visual Studio Code files"
             }, {
                 name: 'ics-update',
                 url: 'https://github.com/johnwargo/ics-update',
-                description: 'A Node module for updating an .ics file and launching it'
+                description: "A Node module for updating an .ics file and launching it"
             }
         ]
     }, {
@@ -287,19 +287,19 @@ export const Pages: Page[] = [
             {
                 name: 'react-samples-t3',
                 url: 'https://github.com/johnwargo/react-samples-t3',
-                description: 'React examples for the We Connect The Dots year 3 class'
+                description: "React examples for the We Connect The Dots year 3 class"
             }, {
                 name: 'pwa-starter-course',
                 url: 'https://github.com/johnwargo/pwa-starter-course',
-                description: 'Source code for Progressive Web Apps: Enhancing Your Web Apps Using Service Workers webinar'
+                description: "Source code for Progressive Web Apps: Enhancing Your Web Apps Using Service Workers webinar"
             }, {
                 name: 'email_input',
                 url: 'https://github.com/johnwargo/email_input',
-                description: 'A sample application that demonstrates the HTML email input type'
+                description: "A sample application that demonstrates the HTML email input type"
             }, {
                 name: 'bootstrap-navbar-complete',
                 url: 'https://github.com/johnwargo/bootstrap-navbar-complete',
-                description: 'Bootstrap Complete NavBar example application'
+                description: "Bootstrap Complete NavBar example application"
             }
         ]
     }, {
@@ -311,19 +311,19 @@ export const Pages: Page[] = [
             {
                 name: 'Outlook-Kill-Country-Delphi',
                 url: 'https://github.com/johnwargo/Outlook-Kill-Country-Delphi',
-                description: 'Delete Outlook contact country field values'
+                description: "Delete Outlook contact country field values"
             }, {
                 name: 'outlook-kill-completed-tasks',
                 url: 'https://github.com/johnwargo/outlook-kill-completed-tasks',
-                description: 'Deletes all completed tasks from a user\'s default Outlook data file'
+                description: "Deletes all completed tasks from a user's default Outlook data file"
             }, {
                 name: 'outlook-get-categories-delphi',
                 url: 'https://github.com/johnwargo/outlook-get-categories-delphi',
-                description: 'Delphi application for retrieving the list of Categories from Microsoft Office'
+                description: "Delphi application for retrieving the list of Categories from Microsoft Office"
             }, {
                 name: 'Kill-Empty-Outlook-Calendar-Entries-Delphi',
                 url: 'https://github.com/johnwargo/Kill-Empty-Outlook-Calendar-Entries-Delphi',
-                description: 'A Delphi application for deleting empty Outlook calendar entries'
+                description: "A Delphi application for deleting empty Outlook calendar entries"
             }
         ]
     }
