@@ -10,10 +10,9 @@ import AboutPage from './pages/about';
 import BooksPage from './pages/books';
 import HomePage from './pages/home';
 import TopicPage from './pages/page';
-
-import './App.css';
-// Build information package
+// generated content
 import buildInfo from './buildInfo';
+import './App.css';
 
 // TODO: Build out the Books page
 // TODO: Populate all of the page content
@@ -156,6 +155,7 @@ class App extends React.Component {
             <HomePage />
           </Route>
         </Switch>
+        
       </Router>
     );
   }

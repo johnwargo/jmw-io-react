@@ -6,3 +6,12 @@
     padding-left: 5px;
     padding-right: 5px;
 }
+
+div.articles div {
+    margin-top: 1.5rem;
+    border-top: 1pt solid #ccc;
+    padding-top: 1.3rem;
+}
+div.articles p.title {
+    margin-bottom: 0.3rem;
+}
