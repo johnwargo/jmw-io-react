@@ -30,9 +30,11 @@ const history = createBrowserHistory();
 history.listen((location: any) => {
   // console.log('History update ');
   // console.table(location);
-  const page = location.pathname;
-  ReactGA.set({ page: page });
-  ReactGA.pageview(page);
+  // const page = location.pathname;
+  // ReactGA.ga('send', 'pageview', location.pathname);
+  // ReactGA.set({ page: page });
+  console.log(`Location change: ${location.pathname}`);
+  ReactGA.pageview(location.pathname);
 });
 
 class App extends React.Component {
