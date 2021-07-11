@@ -282,48 +282,48 @@ export const Pages: Page[] = [
         name: 'Web',
         titlePage: 'Web Development',
         titleTab: 'Web',
-        body: "Kielbasa alcatra drumstick doner. Sirloin cupim pork loin shankle leberkas pig ground round andouille jowl doner brisket bacon pork belly. Drumstick pig landjaeger porchetta t-bone pastrami. Sirloin burgdoggen biltong beef ribs cow ball tip jowl meatball pastrami. Buffalo ribeye beef pig porchetta picanha chislic short ribs prosciutto burgdoggen beef ribs meatloaf pancetta.",
+        body: "I have very few open source web development projects; you'll find all of them here. They're just sample apps I created to help others learn.",
         repositories: [
             {
-                name: 'react-samples-t3',
+                name: 'React Samples',
                 url: 'https://github.com/johnwargo/react-samples-t3',
-                description: "React examples for the We Connect The Dots year 3 class"
+                description: "I volunteer at an organization called We Connect The Dots, and for years now I've helped create and deliver content around web development. This repository contains a series of simple ReactJS apps I created to help students learn React development."
             }, {
-                name: 'pwa-starter-course',
+                name: 'PWA Starter Course',
                 url: 'https://github.com/johnwargo/pwa-starter-course',
-                description: "Source code for Progressive Web Apps: Enhancing Your Web Apps Using Service Workers webinar"
+                description: "In 2020 I delivered a webinar on Progressive Web Apps for O'Reilly. This repository contains the instructions and all of the starting source code for the session."
             }, {
-                name: 'email_input',
+                name: 'Email Input Type Sample',
                 url: 'https://github.com/johnwargo/email_input',
-                description: "A sample application that demonstrates the HTML email input type"
+                description: "I created this sample app when I noticed that Apple and a lot of other vendors weren't using the (then) new HTML Input types. I didn't understand why developers who knew they were asking for an email address weren't using the email input type which automatically switched to the right keyboard for email entry."
             }, {
-                name: 'bootstrap-navbar-complete',
+                name: 'Bootstrap Navbar Complete Sample',
                 url: 'https://github.com/johnwargo/bootstrap-navbar-complete',
-                description: "Bootstrap Complete NavBar example application"
+                description: "When I created my first Bootstrap application, I struggled to understand how to create a site with a menu bar at the top and a footer at the bottom. I finally figured it out and published this complete sample application illustrating how to do it."
             }
         ]
     }, {
         name: 'Windows',
-        titlePage: 'Windows Development',
+        titlePage: 'Windows Development (Delphi)',
         titleTab: 'Windows',
-        body: "Kielbasa alcatra drumstick doner. Sirloin cupim pork loin shankle leberkas pig ground round andouille jowl doner brisket bacon pork belly. Drumstick pig landjaeger porchetta t-bone pastrami. Sirloin burgdoggen biltong beef ribs cow ball tip jowl meatball pastrami. Buffalo ribeye beef pig porchetta picanha chislic short ribs prosciutto burgdoggen beef ribs meatloaf pancetta.",
+        body: "I've been a Delphi (object Pascal) developer since Delphi 1.0 and I did a lot of commercial development using it. This page lists the different projects I released as open source projects, all related to tweaking data in Microsoft Outlook by an external application.",
         repositories: [
             {
-                name: 'Outlook-Kill-Country-Delphi',
+                name: 'Microsoft Outlook Kill Country (Delphi)',
                 url: 'https://github.com/johnwargo/Outlook-Kill-Country-Delphi',
-                description: "Delete Outlook contact country field values"
+                description: "Every so often, Microsoft Outlook will start adding United States of America to the bottom of every address in my address book. Since I sync my calendar and contacts to my mobile phone, this takes up storage space on my phone and slows down the sync process (not by much, I agree, but it does generate more data to sync and I don't like that). So, I wrote a little Delphi app that goes in and deletes all of US country entries in my address book."
             }, {
-                name: 'outlook-kill-completed-tasks',
+                name: 'Microsoft Outlook Kill Completed Tasks (Delphi)',
                 url: 'https://github.com/johnwargo/outlook-kill-completed-tasks',
-                description: "Deletes all completed tasks from a user's default Outlook data file"
+                description: "A while back, my OutLook sync process hiccupped and generated tens of thousands of duplicate tasks. I didn't want to leave them lying around, so I wrote this little utility that deleted all of the completed tasks."
             }, {
-                name: 'outlook-get-categories-delphi',
+                name: 'Microsoft Outlook Get Category List (Delphi)',
                 url: 'https://github.com/johnwargo/outlook-get-categories-delphi',
-                description: "Delphi application for retrieving the list of Categories from Microsoft Office"
+                description: "I wrote this app as I taught myself how to retrieve the user's category list (used to categorize appointments and contacts) from Microsoft Outlook."
             }, {
-                name: 'Kill-Empty-Outlook-Calendar-Entries-Delphi',
+                name: 'Microsoft OutLook Kill Empty Calendar Entries (Delphi)',
                 url: 'https://github.com/johnwargo/Kill-Empty-Outlook-Calendar-Entries-Delphi',
-                description: "A Delphi application for deleting empty Outlook calendar entries"
+                description: "A while back, my OutLook sync process hiccupped and generated thousands of empty calendar entries. I didn't want to leave them lying around, so I wrote this little utility that deleted all empty calendar entries."
             }
         ]
     }

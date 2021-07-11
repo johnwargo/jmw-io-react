@@ -13,7 +13,6 @@ import TopicPage from './pages/page';
 import buildInfo from './buildInfo';
 import './App.css';
 
-// TODO: Populate all of the page content
 // TODO: Get google analytics working
 // TODO: Publish the app somewhere
 // TODO: point johnwargo.io to this project's code
@@ -30,11 +29,10 @@ const history = createBrowserHistory();
 
 history.listen((location: any) => {
   // console.log('History update ');
-  // console.dir(location);
-  // console.log(document.title);
+  // console.table(location);
   const page = location.pathname;
   ReactGA.set({ page: page });
-  ReactGA.pageview(page, [], document.title);
+  ReactGA.pageview(page);
 });
 
 class App extends React.Component {

@@ -66,7 +66,7 @@ class TopicPage extends React.Component<PageProps, PageState> {
       return (
         <div className='container' >
           <h1>{this.state.page.titlePage}</h1>
-          <p>{this.state.page.body}</p>
+          <p className="pageIntro">{this.state.page.body}</p>
           <RepoList repositories={this.state.page.repositories} />
         </div>
       );
