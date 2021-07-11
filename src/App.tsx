@@ -14,8 +14,6 @@ import buildInfo from './buildInfo';
 import './App.css';
 
 // TODO: Get google analytics working
-// TODO: Publish the app somewhere
-// TODO: point johnwargo.io to this project's code
 // TODO: Add search/filtering to page 
 
 // Define the props used to render menu items
