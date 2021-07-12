@@ -21,7 +21,7 @@ class HomePage extends React.Component {
         <div>
           <p className="lead">
             Welcome to my code site; on this site I list information about all of my <a href="https://github.com/johnwargo" target="_blank" rel="noreferrer">public GitHub repositories</a>. I built this site to provide an easier way to navigate my public repositories to find what you're looking for. Use the menu at the top of the page to access pages for each of the code categories.</p>
-          <p><strong>My latest book is:</strong></p>
+          <p><strong>My latest book is <em>Learning Progressive Web Apps</em>:</strong></p>
           <a href="https://amzn.to/365Y2qu" target="_blank" rel="noreferrer">
             <Image
               src="/images/cover-learning-pwa-160.png"
