@@ -204,7 +204,24 @@ export const Pages: Page[] = [
                 name: 'World Clock NeoMatrix Wi-Fi Desktop',
                 url: 'https://github.com/johnwargo/world-clock-neomatrix-wifi-desktop',
                 description: "This is a fork of Andy Doro's Word Clock, updated to use the Feather family of microcontrollers plus Wi-Fi and Network Time Protocol (NTP) to keep the clock accurate."
+            }, {
+                name: 'Arduino Pinewood Derby',
+                url: 'https://github.com/johnwargo/Arduino-Pinewood-Derby',
+                description: "Every father helps his kid with is Pinewood Derby car, right? Well I stayed back for as long as I could, watching other fathers do everything on their son's cars, but I couldn't take it anymore. I build, sorry, I helped him build, an Arduino-powered car with an array of LEDs on top that changed their blink pattern based on the orientation of the car. Hehe."
+            }, {
+                name: 'Arduino Realtime Clock Relay',
+                url: 'https://github.com/johnwargo/arduino-rtc-relay-static',
+                description: "I wanted to reproduce those vacation light timers they sell everywhere but with a realtime clock set via the network (using Network Time Protocol). This one used a commercial 110v relay box which made it safer."
+            }, {
+                name: 'Arduino Twinkle Lights',
+                url: 'https://github.com/johnwargo/Arduino-Twinkle-Lights',
+                description: "This is an Arduino variant of the Pimoroni Firefly Light. Two stands of little LEDs that fade up and down to create a cool night light."
+            }, {
+                name: 'Arduino Twinkle Lights Array',
+                url: 'https://github.com/johnwargo/Arduino-Twinkle-Lights-Array',
+                description: "The original twinkle lights project used to LED strands and it was easy to fade one strand up while the other faded down. For the US Fourth of July holiday, I wanted to use three strands of LEDs (Red, White and Blue), so I made this version of the project that used an array of LED Pins to enable you to have as many strands of lights as you wanted."
             }
+
         ]
     }, {
         name: 'Miscellaneous',
