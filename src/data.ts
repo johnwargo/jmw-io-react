@@ -220,8 +220,40 @@ export const Pages: Page[] = [
                 name: 'Arduino Twinkle Lights Array',
                 url: 'https://github.com/johnwargo/Arduino-Twinkle-Lights-Array',
                 description: "The original twinkle lights project used to LED strands and it was easy to fade one strand up while the other faded down. For the US Fourth of July holiday, I wanted to use three strands of LEDs (Red, White and Blue), so I made this version of the project that used an array of LED Pins to enable you to have as many strands of lights as you wanted."
+            }, {
+                name: 'Circuit Playground Spinner',
+                url: 'https://github.com/johnwargo/spinner-circuit-playground',
+                description: "I recently joined Oracle as a product manager and discovered the Oracle Education Foundation and quickly volunteered to help in their Hello Circuit Playground program. The program uses the Adafruit Circuit Playground to help teach high school students Design Thinking and microcontroller-based project development. One of our prep assignments was to build something using the Circuit Playground and this is the project I came up with."
+            }, {
+                name: 'Glow Globe Circuit Playground',
+                url: 'https://github.com/johnwargo/glow-globe-circuit-playground',
+                description: "My children were born in late October, so we always make a big deal out of the holiday. Its also a great opportunity to do some cool projects. Last year I purchased some plastic globes and my wife frosted the inside to make them translucent. We added a microcontroller, microphone, LEDs, and a battery inside and do some cool light flickering based on sounds nearby. It flashes red when it hears a sound."
             }
-
+            // , {
+            //     name: '',
+            //     url: '',
+            //     description: ""
+            // }
+            // , {
+            //     name: '',
+            //     url: '',
+            //     description: ""
+            // }
+            // , {
+            //     name: '',
+            //     url: '',
+            //     description: ""
+            // }
+            // , {
+            //     name: '',
+            //     url: '',
+            //     description: ""
+            // }
+            // , {
+            //     name: '',
+            //     url: '',
+            //     description: ""
+            // }            
         ]
     }, {
         name: 'Miscellaneous',
