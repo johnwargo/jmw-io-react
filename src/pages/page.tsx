@@ -16,7 +16,7 @@ type RepoListProps = {
   repositories: Repository[];
 }
 
-const debug=false;  // turns off writing to the console
+const debug = false;  // turns off writing to the console
 
 class TopicPage extends React.Component<PageProps, PageState> {
 
@@ -67,6 +67,8 @@ class TopicPage extends React.Component<PageProps, PageState> {
         <div className='container' >
           <h1>{this.state.page.titlePage}</h1>
           <p className="pageIntro">{this.state.page.body}</p>
+          <br />
+          <p className='coffeeLink'>If you find any of these projects useful or helpful, please consider <a href="https://www.buymeacoffee.com/johnwargo" target="_blank">buying me a coffee</a>.</p>
           <RepoList repositories={this.state.page.repositories} />
         </div>
       );
