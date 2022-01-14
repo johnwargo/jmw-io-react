@@ -28,6 +28,7 @@ class HomePage extends React.Component {
               alt="Learning Progressive Web Apps book cover"
               style={{ paddingBottom: "10px" }} />
           </a>
+          <p>Use the menu at the top of the page to view details for all of my code projects.</p>
           <p>
             I semi-regularly post articles on a wide range of random topics on my personal blog at&nbsp;
             <a href="http://www.johnwargo.com" target="_blank" rel="noreferrer">www.johnwargo.com</a>. You can also read more about all of my books on my&nbsp;
