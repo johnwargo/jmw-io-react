@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
 import { Router, Switch, Route } from 'react-router-dom';
 import { NavDropdown, Navbar, Nav } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
@@ -26,13 +26,9 @@ const buildDate = new Date(buildInfo.buildDate);
 const history = createBrowserHistory();
 
 history.listen((location: any) => {
-  // console.log('History update ');
-  // console.table(location);
-  // const page = location.pathname;
-  // ReactGA.ga('send', 'pageview', location.pathname);
-  // ReactGA.set({ page: page });
-  console.log(`Location change: ${location.pathname}`);
-  ReactGA.pageview(location.pathname);
+  const page = location.pathname;
+  console.log(`Page: ${page}`);
+  ReactGA.send({ hitType: "pageview", page });
 });
 
 class App extends React.Component {
@@ -132,8 +128,8 @@ class App extends React.Component {
             <BooksPage />
           </Route> */}
           <Route path="/books">
-          <TopicPage topic='Books' />
-          </Route>        
+            <TopicPage topic='Books' />
+          </Route>
           <Route path="/cordova">
             <TopicPage topic='Apache Cordova' />
           </Route>
@@ -148,10 +144,10 @@ class App extends React.Component {
           </Route>
           <Route path="/misc">
             <TopicPage topic='Miscellaneous' />
-          </Route>          
+          </Route>
           <Route path="/node">
             <TopicPage topic='Node' />
-          </Route>          
+          </Route>
           <Route path="/web">
             <TopicPage topic='Web' />
           </Route>
@@ -162,7 +158,7 @@ class App extends React.Component {
             <HomePage />
           </Route>
         </Switch>
-        
+
       </Router>
     );
   }
