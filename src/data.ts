@@ -361,6 +361,15 @@ export const Pages: Page[] = [
                 name: 'Bootstrap Navbar Complete Sample',
                 url: 'https://github.com/johnwargo/bootstrap-navbar-complete',
                 description: "When I created my first Bootstrap application, I struggled to understand how to create a site with a menu bar at the top and a footer at the bottom. I finally figured it out and published this complete sample application illustrating how to do it."
+            },
+            {
+                name: 'Ionic Build Information Module',
+                url: 'https://github.com/johnwargo/ionic-build-info',
+                description: "I was working in an Ionic project and realized that I wanted to write the app's build details the the console at startup but couldn't figure out the most efficient way. After doing some research I realized that the solution I needed didn't exist, so I created one. When you run this utility in an Ionic project folder, it updates a build info module in the project. The app can then import the module and use data in it to write build number and build date information to the console."
+            }, {
+                name: 'ReactJS Build Information Module',
+                url: 'https://github.com/johnwargo/react-build-info',
+                description: "I was working in an React JS project and realized that I wanted to write the app's build details the the console at startup but couldn't figure out the most efficient way. After doing some research I realized that the solution I needed didn't exist, so I created one. When you run this utility in a ReactJS project folder, it updates a build info module in the project. The app can then import the module and use data in it to write build number and build date information to the console."
             }
         ]
     }, {
