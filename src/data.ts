@@ -201,8 +201,8 @@ export const Pages: Page[] = [
                 url: 'https://github.com/johnwargo/pi-remind-hd-notify',
                 description: "This is the most recent edition of Pi Remind. This one enhances the Pi Remind HD project by connecting it to the Remote Notify device enabling me to automatically indicate to my family when I'm busy and available. My intention is to release the Remote Notify device as a commercial product."
             }, {
-                name: 'World Clock NeoMatrix Wi-Fi Desktop',
-                url: 'https://github.com/johnwargo/world-clock-neomatrix-wifi-desktop',
+                name: 'Word Clock NeoMatrix Wi-Fi Desktop',
+                url: 'https://github.com/johnwargo/word-clock-neomatrix-wifi-desktop',
                 description: "This is a fork of Andy Doro's Word Clock, updated to use the Feather family of microcontrollers plus Wi-Fi and Network Time Protocol (NTP) to keep the clock accurate."
             }, {
                 name: 'Arduino Pinewood Derby',
