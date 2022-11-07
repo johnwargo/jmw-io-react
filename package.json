@@ -27,9 +27,9 @@
     "react-build-info": "^0.0.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "pbuild": "react-build-info && react-scripts build",
-    "build": "react-scripts build",
+    "start": "react-scripts --openssl-legacy-provider start",
+    "pbuild": "react-build-info && react-scripts --openssl-legacy-provider build",
+    "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
