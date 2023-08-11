@@ -229,11 +229,11 @@ export const Pages: Page[] = [
                 url: 'https://github.com/johnwargo/glow-globe-circuit-playground',
                 description: "My children were born in late October, so we always make a big deal out of the holiday. Its also a great opportunity to do some cool projects. Last year I purchased some plastic globes and my wife frosted the inside to make them translucent. We added a microcontroller, microphone, LEDs, and a battery inside and do some cool light flickering based on sounds nearby. It flashes red when it hears a sound."
             }
-            // , {
-            //     name: '',
-            //     url: '',
-            //     description: ""
-            // }
+            , {
+                name: 'Glowing Pumpkin Xiao 5x5 BFF',
+                url: 'https://github.com/johnwargo/glowing-pumpkin-xiao-bff',
+                description: "A new version of my Glowing Pumpkin project - this one uses the Seeed Studio Xiao and the Adafruit 5x5 BFF NeoPixel Matrix."
+            }
             // , {
             //     name: '',
             //     url: '',
