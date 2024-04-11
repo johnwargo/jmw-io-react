@@ -71,6 +71,46 @@ export const Pages: Page[] = [
             }
         ]
     }, {
+        name: '11ty',
+        titlePage: 'Eleventy (11ty)',
+        titleTab: '11ty',
+        body: 'I run several sites on Eleventy and have built a few plugins to help me manage the sites. The repositories listed below are the source code repositories for the Eleventy plugins I published.',
+        repositories: [
+            {
+                name: 'Eleventy Plugin Future Post',
+                url: 'https://github.com/johnwargo/eleventy-plugin-future-post',
+                description: "An Eleventy Plugin that allows you to set a future publishing date for one or more posts and not generate (publish) them until you build the site after the selected date."
+            }, {
+                name: 'Eleventy Plugin Post Statistics',
+                url: 'https://github.com/johnwargo/eleventy-plugin-post-stats',
+                description: "An Eleventy plugin that generates a site posts statistics collection you can use in Eleventy sites to display stats for your site."
+            }, {
+                name: 'Eleventy Plugin GitHub Repositories',
+                url: 'https://github.com/johnwargo/eleventy-plugin-github-repos',
+                description: "An Eleventy plugin that creates a collection containing metadata from an account's GitHub repositories."
+            }, {
+                name: 'Eleventy Plugin File List',
+                url: 'https://github.com/johnwargo/eleventy-plugin-file-list',
+                description: "An Eleventy Plugin that creates a collection containing metadata from a list of all files in a specified folder."
+            }, {
+                name: 'Eleventy New Post',
+                url: 'https://github.com/johnwargo/eleventy-new-post',
+                description: "A simple command-line utility that creates a new post for an Eleventy site from a template."
+            }, {
+                name: 'Eleventy Generate Posts',
+                url: 'https://github.com/johnwargo/eleventy-generate-posts',
+                description: "A simple command-line utility that creates a batch of new posts for an Eleventy site."
+            }, {
+                name: 'Eleventy Display GitHub Repositories (auth)',
+                url: 'https://github.com/johnwargo/github-repos-sample-authorized',
+                description: "Playing around with displaying all public repositories in my personal GitHub account in an Eleventy site using the GitHub authenticated API."
+            }, {
+                name: 'Eleventy Display GitHub Repositories (no auth)',
+                url: 'https://github.com/johnwargo/github-repos-sample-unauthorized',
+                description: "Playing around with displaying all public repositories in my personal GitHub account in an Eleventy site using the GitHub unauthenticated API."
+            }
+        ]
+    }, {
         name: 'Flutter',
         titlePage: 'Flutter Development',
         titleTab: 'Flutter',
@@ -228,32 +268,23 @@ export const Pages: Page[] = [
                 name: 'Glow Globe Circuit Playground',
                 url: 'https://github.com/johnwargo/glow-globe-circuit-playground',
                 description: "My children were born in late October, so we always make a big deal out of the holiday. Its also a great opportunity to do some cool projects. Last year I purchased some plastic globes and my wife frosted the inside to make them translucent. We added a microcontroller, microphone, LEDs, and a battery inside and do some cool light flickering based on sounds nearby. It flashes red when it hears a sound."
-            }
-            , {
+            }, {
                 name: 'Glowing Pumpkin Xiao 5x5 BFF',
                 url: 'https://github.com/johnwargo/glowing-pumpkin-xiao-bff',
                 description: "A new version of my Glowing Pumpkin project - this one uses the Seeed Studio Xiao and the Adafruit 5x5 BFF NeoPixel Matrix."
+            }, {
+                name: 'CircuitPython Sync',
+                url: 'https://github.com/johnwargo/circuitpython-sync',
+                description: "Node module that synchronizes the files on a connected CircuitPython device to a local project folder. It provides a one-way sync from the CircuitPython device to the local project folder."
+            }, {
+                name: 'Glowing Pumpkin Server (HTTP)',
+                url: 'https://github.com/johnwargo/glowing-pumpkin-server-http',
+                description: "This is the Glowing Pumpkin Xiao 5x5 BFF project with a web server added to you can control the app from a smartphone, tablet, of desktop PC. The original project changed colors randomly and periodically flashed the LEDs white to simulate sparks or lightning."
+            }, {
+                name: 'Pumpkin Controller (FireMonkey)',
+                url: 'https://github.com/johnwargo/pumpkin-cotroller-firemonkey',
+                description: "This is a cross-platform native version of my Pumpkin Controller app created using Embarcadero RAD Studio and FireMonkey."
             }
-            // , {
-            //     name: '',
-            //     url: '',
-            //     description: ""
-            // }
-            // , {
-            //     name: '',
-            //     url: '',
-            //     description: ""
-            // }
-            // , {
-            //     name: '',
-            //     url: '',
-            //     description: ""
-            // }
-            // , {
-            //     name: '',
-            //     url: '',
-            //     description: ""
-            // }            
         ]
     }, {
         name: 'Miscellaneous',
@@ -273,6 +304,18 @@ export const Pages: Page[] = [
                 name: 'Hackspace Magazine Code',
                 url: 'https://github.com/johnwargo/hackspace-article-code',
                 description: "The source code from all of my (4) Hackspace Magazine articles."
+            }, {
+                name: 'VSCode Describer GenAI Extension',
+                url: 'https://github.com/johnwargo/vscode-describer-genai',
+                description: "A Visual Studio Code extension that generates a description of an article using Generative AI (GenAI) and ChatGPT and adds it to YAML front matter for the article. The extension targets users who use Visual Studio Code to edit blog posts for static site generators (like Eleventy)."
+            }, {
+                name: 'Visual Studio Extension Progress Demo',
+                url: 'https://github.com/johnwargo/vscode-progress-demo',
+                description: "I'm working on my first Visual Studio Code extension and as part of the extension's work, it calls a long-running external API that could take 30 seconds or more to complete. I started looking for way to display a progress dialog and discovered the vscode.window.withProgress."
+            }, {
+                name: 'VS Code Webview Dialog Proof of Concept',
+                url: 'https://github.com/johnwargo/vscode-webview-dialog',
+                description: "This repo contains a library project vscode-webview-dialog and a test/demo VS Code extension project vscode-webview-dialog-test that references the library."
             }
         ]
     }, {
@@ -370,6 +413,10 @@ export const Pages: Page[] = [
                 name: 'ReactJS Build Information Module',
                 url: 'https://github.com/johnwargo/react-build-info',
                 description: "I was working in an React JS project and realized that I wanted to write the app's build details the the console at startup but couldn't figure out the most efficient way. After doing some research I realized that the solution I needed didn't exist, so I created one. When you run this utility in a ReactJS project folder, it updates a build info module in the project. The app can then import the module and use data in it to write build number and build date information to the console."
+            }, {
+                name: 'UPS Tracking URL Launcher',
+                url: 'https://github.com/johnwargo/ups-tracking-url-launcher',
+                description: "Generates a URL for a package using a UPS tracking number. The URL launches the UPS website and displays the tracking information for the package."
             }
         ]
     }, {
@@ -394,6 +441,18 @@ export const Pages: Page[] = [
                 name: 'Microsoft OutLook Kill Empty Calendar Entries (Delphi)',
                 url: 'https://github.com/johnwargo/Kill-Empty-Outlook-Calendar-Entries-Delphi',
                 description: "A while back, my OutLook sync process hiccupped and generated thousands of empty calendar entries. I didn't want to leave them lying around, so I wrote this little utility that deleted all empty calendar entries."
+            }, {
+                name: 'Delphi ListBox Multiselect Item(s) Move Demo',
+                url: 'https://github.com/johnwargo/Delphi-ListBox-Move-Demo',
+                description: "I was working on a Windows application project in Delphi that required moving items around within a Delphi standard ListBox. It's pretty easy to swap list item position when only a single item is selected, but once you enable multiselect on the component, things become more difficult. As I poked around on the Internet for solutions, I couldn't find a complete example, so I decided to create and publish one."
+            }, {
+                name: 'Windows Path Viewer Delphi',
+                url: 'https://github.com/johnwargo/windows-path-viewer-delphi',
+                description: "This repository contains a complete application that loads both the User and System Paths into list boxes so you can view them. Here's what it looks like when you build and run it:"
+            }, {
+                name: 'Outlook Delete Empty Inbox Folders',
+                url: 'https://github.com/johnwargo/outlook-delete-empty-inbox-folders',
+                description: "A Windows application (written in Delphi (Object Pascal) that deletes all empty Inbox folders in the default Outlook profile on the system running the app."
             }
         ]
     }

@@ -86,6 +86,9 @@ class App extends React.Component {
               <LinkContainer to="/cordova">
                 <Nav.Link>Cordova</Nav.Link>
               </LinkContainer>
+              <LinkContainer to="/11ty">
+                <Nav.Link>11ty</Nav.Link>
+              </LinkContainer>
               <LinkContainer to="/flutter">
                 <Nav.Link>Flutter</Nav.Link>
               </LinkContainer>
@@ -132,6 +135,9 @@ class App extends React.Component {
           </Route>
           <Route path="/cordova">
             <TopicPage topic='Apache Cordova' />
+          </Route>
+          <Route path="/11ty">
+            <TopicPage topic='11ty' />
           </Route>
           <Route path="/flutter">
             <TopicPage topic='Flutter' />
