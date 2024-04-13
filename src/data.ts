@@ -108,6 +108,22 @@ export const Pages: Page[] = [
                 name: 'Eleventy Display GitHub Repositories (no auth)',
                 url: 'https://github.com/johnwargo/github-repos-sample-unauthorized',
                 description: "Playing around with displaying all public repositories in my personal GitHub account in an Eleventy site using the GitHub unauthenticated API."
+            }, {
+                name: 'John Wargo Static',
+                url: 'https://github.com/johnwargo/johnwargo-static-11ty',
+                description: "The static web site for johnwargo.com"
+            }, {
+                name: 'A World Without Apps Static',
+                url: 'https://github.com/johnwargo/world-without-apps-11ty',
+                description: "The static web site for aworldwithoutapps.com"
+            }, {
+                name: 'Random Development Errors',
+                url: 'https://github.com/johnwargo/random-errors-11ty',
+                description: "The static web site for randomerrors.dev"
+            }, {
+                name: 'Cosplayer Workshop',
+                url: 'https://github.com/johnwargo/cosplayer-workshop-11ty',
+                description: "The static web site detailing my daughter's cosplay workshop"
             }
         ]
     }, {
