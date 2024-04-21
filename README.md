@@ -4,4 +4,6 @@
 
 ![Home Page](screenshots/figure-01.png)
 
+Use Visual Studio code shortcuts to add new `!repo` and `!category` sections to the data file.
+
 <!-- <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="johnwargo" data-color="#5F7FFF" data-emoji="📖" data-font="Comic" data-text="Buy me a book" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script> -->
