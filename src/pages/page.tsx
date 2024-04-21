@@ -66,7 +66,7 @@ class TopicPage extends React.Component<PageProps, PageState> {
       return (
         <div className='container' >
           <h1>{this.state.page.titlePage}</h1>
-          <p className="pageIntro">{this.state.page.body}</p>
+          <p className="pageIntro">{this.state.page.body}&nbsp;This page contains links to <strong>{this.state.page.repositories.length}</strong> repositories.</p>
           <br />
           <p className='coffeeLink'>If you find any of these projects useful or helpful, please consider <a href="https://www.buymeacoffee.com/johnwargo" rel="noreferrer" target="_blank">buying me a coffee</a>.</p>
           <RepoList repositories={this.state.page.repositories} />
