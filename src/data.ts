@@ -4,22 +4,6 @@
 */
 
 import { Page } from './interfaces/page';
-// import { RepositoryList } from './interfaces/repo';
-
-// Defines the different pages in the site and the content displayed on each page.
-// , {
-//     name: '',
-//     titlePage: '',
-//     titleTab: '',
-//     body: '',
-// } 
-
-
-// , {
-//     name: '',
-//     url: '',
-//     description: ""
-// }
 
 export const Pages: Page[] = [
     {
@@ -124,6 +108,10 @@ export const Pages: Page[] = [
                 name: 'Cosplayer Workshop',
                 url: 'https://github.com/johnwargo/cosplayer-workshop-11ty',
                 description: "The static web site detailing my daughter's cosplay workshop"
+            }, {
+                name: 'Eleventy Plugin Starter (JavaScript)',
+                url: 'https://github.com/johnwargo/eleventy-plugin-starter',
+                description: "This repository contains a complete Eleventy plugin as well as a complete Eleventy site that exercises the plugin."
             }
         ]
     }, {
@@ -300,6 +288,30 @@ export const Pages: Page[] = [
                 name: 'Pumpkin Controller (FireMonkey)',
                 url: 'https://github.com/johnwargo/pumpkin-cotroller-firemonkey',
                 description: "This is a cross-platform native version of my Pumpkin Controller app created using Embarcadero RAD Studio and FireMonkey."
+            }, {
+                name: 'DFRobot Lightning Detector',
+                url: 'https://github.com/johnwargo/lightning-detector-dfrobot',
+                description: "Work in progress (WIP) Lightning detector project."
+            }, {
+                name: 'Glowing Pumpkin Sync (UDP)',
+                url: 'https://github.com/johnwargo/glowing-pumpkin-udp-sync',
+                description: "This is a version of the Glowing Pumpkin Xiao 5x5 BFF project that allows multiple devices to synchronize LED Matrix colors so all devices display the same color. I built this project because I wanted to place one of the Glowing Pumpkin Xiao 5x5 BFF devices in each of the front dormers in my house and synchronize the display across all of them."
+            }, {
+                name: 'Glowing Pumpkin Receiver (UDP)',
+                url: 'https://github.com/johnwargo/glowing-pumpkin-receiver-udp',
+                description: "This is the Glowing Pumpkin Xiao 5x5 BFF project with a UDP broadcast listener added to you can control the LEDs from a smartphone or tablet application. The original project changed colors randomly and periodically flashed the LEDs white to simulate sparks or lightning."
+            }, {
+                name: 'Pumpkin LED Controller (HTML)',
+                url: 'https://github.com/johnwargo/glowing-pumpkin-controller-html',
+                description: "This is a web application used to control the Glowing Pumpkin Server (HTTP) hosted on Netlify."
+            }, {
+                name: 'Arduino ESP32 Multiple Cores',
+                url: 'https://github.com/johnwargo/arduino-esp32-multiple-cores',
+                description: "This repository contains the source code for a very simple, but complete, example of how to configure an Arduino project for ESP32 to run separate tasks on each processor core."
+            }, {
+                name: 'Sleeping Dragon Sign Hardware Test',
+                url: 'https://github.com/johnwargo/sleeping-dragon-sign-test',
+                description: ""
             }
         ]
     }, {
@@ -332,6 +344,10 @@ export const Pages: Page[] = [
                 name: 'VS Code Webview Dialog Proof of Concept',
                 url: 'https://github.com/johnwargo/vscode-webview-dialog',
                 description: "This repo contains a library project vscode-webview-dialog and a test/demo VS Code extension project vscode-webview-dialog-test that references the library."
+            }, {
+                name: 'All Things Open 2023 Example Code',
+                url: 'https://github.com/johnwargo/ato-2023-shell-scripts-code',
+                description: "This repository contains the sample scripts used in my 2023 All Things Open session entitled Write Shell Scripts Using JavaScript and zx."
             }
         ]
     }, {
@@ -396,6 +412,22 @@ export const Pages: Page[] = [
                 name: 'ICS File Update',
                 url: 'https://github.com/johnwargo/ics-update',
                 description: "This one's a weird one. A friend of mine wanted an easy way to update and send a pre-configured calendar invite, so I created a simple Node module to update an existing `.ics` file and launching it in the default calendar application."
+            }, {
+                name: 'YAML Add Property',
+                url: 'https://github.com/johnwargo/yaml-add-property',
+                description: "A command-line utility for adding or modifying a YAML front matter property in all files in a particular directory (and all subdirectories therein). Created to enable batch updates of content files with YAML front matter."
+            }, {
+                name: 'Export Joomla to Markdown',
+                url: 'https://github.com/johnwargo/joomla-to-markdown',
+                description: "The Joomla! to Markdown (j2md) module is a node.js command line utility for converting Joomla 3 article content into markdown files. I needed to migrate an old Joomla 3 site to another platform and wrote this module to handle the heavy lifting for me. I wanted to use something like Jekyll or Eleventy for my site and knew that both supported markdown files."
+            }, {
+                name: 'Algolia Index Update',
+                url: 'https://github.com/johnwargo/algolia-index-update',
+                description: "A command-line utility for web sites using Algolia (for site indexing and search) to merge an updated index with an Algolia project data source."
+            }, {
+                name: 'Generate Build Info',
+                url: 'https://github.com/johnwargo/generate-build-info',
+                description: "Command line utility for npm-based packages that generates a simple buildinfo.json file in a specified folder with the expectation that the application in the project folder reads the file and displays the contents somehow within the application."
             }
         ]
     }, {
@@ -433,6 +465,10 @@ export const Pages: Page[] = [
                 name: 'UPS Tracking URL Launcher',
                 url: 'https://github.com/johnwargo/ups-tracking-url-launcher',
                 description: "Generates a URL for a package using a UPS tracking number. The URL launches the UPS website and displays the tracking information for the package."
+            }, {
+                name: 'Goodreads Page Adjuster',
+                url: 'https://github.com/johnwargo/goodreads-page-adjuster',
+                description: "I created this simple app to allow me to easily calculate an adjusted page number based on the actual length of the book's readable content."
             }
         ]
     }, {
