@@ -87,7 +87,7 @@ class App extends React.Component {
                 <Nav.Link>Cordova</Nav.Link>
               </LinkContainer>
               <LinkContainer to="/11ty">
-                <Nav.Link>11ty</Nav.Link>
+                <Nav.Link>Eleventy</Nav.Link>
               </LinkContainer>
               <LinkContainer to="/flutter">
                 <Nav.Link>Flutter</Nav.Link>

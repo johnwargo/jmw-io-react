@@ -57,7 +57,7 @@ export const Pages: Page[] = [
     }, {
         name: '11ty',
         titlePage: 'Eleventy (11ty)',
-        titleTab: '11ty',
+        titleTab: 'Eleventy',
         body: 'I run several sites on Eleventy and have built a few plugins to help me manage the sites. The repositories listed below are the source code repositories for the Eleventy plugins I published.',
         repositories: [
             {
@@ -312,6 +312,11 @@ export const Pages: Page[] = [
                 name: 'Sleeping Dragon Sign Hardware Test',
                 url: 'https://github.com/johnwargo/sleeping-dragon-sign-test',
                 description: ""
+            },
+            {
+                name: 'Flame-Throwing Pumpkin (Arduino)',
+                url: 'https://github.com/johnwargo/flame-throwing-pumpkin-feather',
+                description: "I always wanted a flame throwing pumpkin, so finally built one. This project uses a Glade Air Freshener, an Adafrui Feather board and a remote control relay board to create a flame-throwing pumpkin."
             }
         ]
     }, {
