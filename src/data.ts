@@ -433,6 +433,14 @@ export const Pages: Page[] = [
                 name: 'Generate Build Info',
                 url: 'https://github.com/johnwargo/generate-build-info',
                 description: "Command line utility for npm-based packages that generates a simple buildinfo.json file in a specified folder with the expectation that the application in the project folder reads the file and displays the contents somehow within the application."
+            }, {
+                name: 'Eleventy New Post',
+                url: 'https://github.com/johnwargo/eleventy-new-post',
+                description: "A simple command-line utility that creates a new post for an Eleventy site from a template."
+            }, {
+                name: 'Eleventy Generate Posts',
+                url: 'https://github.com/johnwargo/eleventy-generate-posts',
+                description: "A simple command-line utility that creates a batch of new posts for an Eleventy site."
             }
         ]
     }, {
